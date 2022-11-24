@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -7,11 +7,14 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import Button from 'react-bootstrap/Button';
 
 export default function Header() {
-    const [isActive, setActive] = useState("false");
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
 
-    const handleToggle = () => {
-        setActive(!isActive);
-    };
+    useEffect(() => {
+        window.addEventListener("resize", () => {
+            const ismobile = window.innerWidth < 992;
+            if (ismobile !== isMobile) setIsMobile(ismobile);
+        }, false);
+    }, [isMobile]);
 
     return (
         <header className='site-header'>
@@ -20,7 +23,7 @@ export default function Header() {
                     <Navbar.Brand href='/home' className='site-branding'>
                         {process.env.REACT_APP_PROJEKTNAME}
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} onClick={handleToggle} />
+                    <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
                     <Navbar.Offcanvas
                         id={`offcanvasNavbar-expand-lg`}
                         aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
@@ -32,7 +35,7 @@ export default function Header() {
                             </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
-                            <Nav className={"site-navigation " + (isActive ? "hidden" : null)} as={'nav'}>
+                            <Nav className={`${isMobile ? "site-navigation" : "hidden site-navigation"}`} as={'nav'}>
                                 <ul>
                                     <Nav.Item as={'li'}>
                                         <Nav.Link href="/home">Home</Nav.Link>
