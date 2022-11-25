@@ -676,6 +676,9 @@ body {
     height: 42px;
     margin-left: -21px;
     background: transparent;
+
+    position: absolute;
+    z-index: 10;
 }
 
 .next-event-slider-wrap .swiper-button-next img {
