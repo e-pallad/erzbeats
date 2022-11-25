@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Lineup1 from './components/Lineup1';
 import Lineup2 from './components/Lineup2';
+import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Lineup2 />
           </Row>
         </Container>
+        <Gallery />
       </div>
       <Footer />
     </div>
