@@ -68,7 +68,7 @@ body {
 
 .header-bar .site-branding {
     margin-bottom: 0;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 800;
     color: hsl(0, 0%, 100%);
     text-decoration: none;
@@ -84,6 +84,21 @@ body {
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.offcanvas-title {
+    color: #03070c;
+    font-size: 28px;
+}
+
+.offcanvas-body ul li {
+    overflow: hidden;
+    list-style: none;
+    color: #03070c;
+}
+
+.offcanvas-body ul li a {
+    font-size: 26px;
 }
 
 .site-navigation.hidden {
@@ -128,11 +143,21 @@ body {
     color: #fff;
     transition: all 0.35s;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
+}
+
+.site-navigation.hidden ul li button:hover {
+    color: #03070c;
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
 }
 
 .site-navigation.hidden ul li a {
     padding-left: 40px!important;
+}
+
+.site-navigation.hidden ul li a:nth-last-of-type(1) {
+    padding-left: 12px!important;
 }
 
 @media screen and (min-width: 992px) {

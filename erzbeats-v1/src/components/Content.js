@@ -2,81 +2,85 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
+
 export default function Content() {
     return (
         <div className="content-section">
             <Container>
                 <Row>
                     <Col xs="12">
-                        <div class="lineup-artists-headline">
-                            <div class="entry-title">
+                        <div className="lineup-artists-headline">
+                            <div className="entry-title">
                                 <p>ERZbeat 2023</p>
                                 <h2>Die Headliner</h2>
                             </div>
-                            <div class="lineup-artists">
-                                <div class="lineup-artists-wrap flex flex-wrap">
-                                    <figure class="featured-image">
+                            <div className="lineup-artists">
+                                <div className="lineup-artists-wrap flex flex-wrap">
+                                    <figure className="featured-image">
                                         <a href="#Test123">
                                             <img src="https://via.placeholder.com/360x420.png" alt=""/>
                                         </a>
                                     </figure>
-                                    <div class="lineup-artists-description">
-                                        <div class="lineup-artists-description-container">
-                                            <div class="entry-title">
+                                    <div className="lineup-artists-description">
+                                        <div className="lineup-artists-description-container">
+                                            <div className="entry-title">
                                                 Jamila Williams
                                             </div>
-                                            <div class="entry-content">
+                                            <div className="entry-content">
                                                 <p>Quisque at erat eu libero consequat tempus. Quisque mole stie convallis tempus. Ut semper purus metus, a euismod sapien sodales ac. Duis viverra eleifend fermentum.
                                                 </p>
+                                                <AudioPlayer src="https://soundcloud.com/noah-strebe-387899902/another-love-ostekke" crossOrigin="anonymous" onPlay={e => console.log("onPlay")} />
                                             </div>
-                                            <div class="box-link">
+                                            <div className="box-link">
                                                 <a href="#somewhere"><img src="images/box.jpg" alt=""/></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="lineup-artists-wrap flex flex-wrap">
-                                    <div class="lineup-artists-description">
-                                        <figure class="featured-image d-md-none">
+                                <div className="lineup-artists-wrap flex flex-wrap">
+                                    <div className="lineup-artists-description">
+                                        <figure className="featured-image d-md-none">
                                             <a href="#somewhere">
                                                 <img src="https://via.placeholder.com/360x420.png" alt=""/>
                                             </a>
                                         </figure>
-                                        <div class="lineup-artists-description-container">
-                                            <div class="entry-title">
+                                        <div className="lineup-artists-description-container">
+                                            <div className="entry-title">
                                                 Sandra Superstar
                                             </div>
-                                            <div class="entry-content">
+                                            <div className="entry-content">
                                                 <p>Quisque at erat eu libero consequat tempus. Quisque mole stie convallis tempus. Ut semper purus metus, a euismod sapien sodales ac. Duis viverra eleifend fermentum.
                                                 </p>
                                             </div>
-                                            <div class="box-link">
+                                            <div className="box-link">
                                                 <a href="#somewhere"><img src="images/box.jpg" alt=""/></a>
                                             </div>
                                         </div>
                                     </div>
-                                    <figure class="featured-image d-none d-md-block">
+                                    <figure className="featured-image d-none d-md-block">
                                         <a href="#somewhere">
                                             <img src="https://via.placeholder.com/360x420.png" alt=""/>
                                         </a>
                                     </figure>
                                 </div>
-                                <div class="lineup-artists-wrap flex flex-wrap">
-                                    <figure class="featured-image">
+                                <div className="lineup-artists-wrap flex flex-wrap">
+                                    <figure className="featured-image">
                                         <a href="#somewhere">
                                             <img src="https://via.placeholder.com/360x420.png" alt=""/>
                                         </a>
                                     </figure>
-                                    <div class="lineup-artists-description">
-                                        <div class="lineup-artists-description-container">
-                                            <div class="entry-title">
+                                    <div className="lineup-artists-description">
+                                        <div className="lineup-artists-description-container">
+                                            <div className="entry-title">
                                                 DJ Crazyhead
                                             </div>
-                                            <div class="entry-content">
+                                            <div className="entry-content">
                                                 <p>Quisque at erat eu libero consequat tempus. Quisque mole stie convallis tempus. Ut semper purus metus, a euismod sapien sodales ac. Duis viverra eleifend fermentum.
                                                 </p>
                                             </div>
-                                            <div class="box-link">
+                                            <div className="box-link">
                                                 <a href="#somewhere">
                                                     <img src="images/box.jpg" alt=""/></a>
                                             </div>

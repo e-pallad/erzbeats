@@ -47,7 +47,7 @@ export default function Header() {
                                         <Nav.Link href="/contact">Kontakt</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item as={'li'}>
-                                        <Button href='/buytickets' as={'Button'} variant="outline-light">Tickets</Button>
+                                        {isMobile ? (<Nav.Link href="/buytickets">Tickets</Nav.Link>) : (<Button href='/buytickets' as={'Button'} variant="outline-light">Tickets</Button>)}
                                     </Nav.Item>
                                 </ul>
                             </Nav>
@@ -55,37 +55,6 @@ export default function Header() {
                     </Navbar.Offcanvas>
                 </Container>
             </Navbar>
-            {/** 
-            <div className='header-bar'>
-                <Container fluid>
-                    <Row className="align-items-center">
-                        <Col xs="10" lg="4">
-                            <h1 className='site-branding flex'>
-                                <a href='/home'>{process.env.REACT_APP_PROJEKTNAME}</a>
-                            </h1>
-                        </Col>
-                        <Col xs="2" lg="8">
-                            <Nav className="site-navigation" as={'nav'}>
-                                <ul>
-                                    <Nav.Item as={'li'}>
-                                        <Nav.Link href="/home">Home</Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item as={'li'}>
-                                        <Nav.Link href="/artists">Artists</Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item as={'li'}>
-                                        <Nav.Link href="/contact">Kontakt</Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item as={'li'}>
-                                        <Button href='/buytickets' as={'Button'} variant="outline-light">Tickets</Button>
-                                    </Nav.Item>
-                                </ul>
-                            </Nav>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
-            */}
         </header>
     );
 }
