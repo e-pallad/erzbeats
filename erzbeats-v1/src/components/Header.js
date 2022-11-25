@@ -47,7 +47,7 @@ export default function Header() {
                                         <Nav.Link href="/contact">Kontakt</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item as={'li'}>
-                                        {isMobile ? (<Nav.Link href="/buytickets">Tickets</Nav.Link>) : (<Button href='/buytickets' as={'Button'} variant="outline-light">Tickets</Button>)}
+                                        {isMobile ? (<Nav.Link href="/buytickets">Tickets</Nav.Link>) : (<Button href='/buytickets' as={'button'} variant="outline-light">Tickets</Button>)}
                                     </Nav.Item>
                                 </ul>
                             </Nav>
