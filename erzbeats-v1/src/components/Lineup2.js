@@ -1,6 +1,5 @@
 import Col from "react-bootstrap/Col";
 import Figure from "react-bootstrap/Figure";
-import box from "../images/box.jpg";
 
 export default function Lineup2() {
     return (
