@@ -1,4 +1,6 @@
 import Col from "react-bootstrap/Col";
+import Figure from "react-bootstrap/Figure";
+import box from "../images/box.jpg";
 
 export default function Lineup2() {
     return (
@@ -10,77 +12,60 @@ export default function Lineup2() {
                 </div>
                 <div className="row the-complete-lineup-artists">
                     <div className="col-6 col-md-4 col-lg-3 artist-single">
-                        <figure className="featured-image">
+                        <Figure className="featured-image">
                             <a href="#123">
                                 <img src="https://via.placeholder.com/255x295.png" alt=""/></a>
-                            <a href="#123" className="box-link">
-                                <img src="images/box.jpg" alt=""/></a>
-                        </figure>
+                        </Figure>
                         <h2>Miska Smith</h2>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3 artist-single">
-                        <figure className="featured-image">
+                        <Figure className="featured-image">
                             <a href="#123">
                                 <img src="https://via.placeholder.com/255x295.png" alt=""/>
                             </a>
-                            <a href="#123" className="box-link">
-                                <img src="images/box.jpg" alt=""/>
-                            </a>
-                        </figure>
+                        </Figure>
                         <h2>Hayley Down</h2>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3 artist-single">
-                        <figure className="featured-image">
+                        <Figure className="featured-image">
                             <a href="#123">
                                 <img src="https://via.placeholder.com/255x295.png" alt=""/></a>
-                            <a href="#123" className="box-link">
-                                <img src="images/box.jpg" alt=""/></a>
-                        </figure>
+                        </Figure>
                         <h2>The Band Song</h2>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3 artist-single">
-                        <figure className="featured-image">
+                        <Figure className="featured-image">
                             <a href="#123">
                                 <img src="https://via.placeholder.com/255x295.png" alt=""/></a>
-                            <a href="#123" className="box-link">
-                                <img src="images/box.jpg" alt=""/></a>
-                        </figure>
+                        </Figure>
                         <h2>Pink Machine</h2>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3 artist-single">
-                        <figure className="featured-image">
+                        <Figure className="featured-image">
                             <a href="#123">
                                 <img src="https://via.placeholder.com/255x295.png" alt=""/></a>
-                            <a href="#123" className="box-link">
-                                <img src="images/box.jpg" alt=""/></a>
-                        </figure>
+                        </Figure>
                         <h2>Brasil Band</h2>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3 artist-single">
-                        <figure className="featured-image">
+                        <Figure className="featured-image">
                             <a href="#123">
                                 <img src="https://via.placeholder.com/255x295.png" alt=""/></a>
-                            <a href="#123" className="box-link">
-                                <img src="images/box.jpg" alt=""/></a>
-                        </figure>
+                        </Figure>
                         <h2>Mickey</h2>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3 artist-single">
-                        <figure className="featured-image">
+                        <Figure className="featured-image">
                             <a href="#123">
                                 <img src="https://via.placeholder.com/255x295.png" alt=""/></a>
-                            <a href="#123" className="box-link">
-                                <img src="images/box.jpg" alt=""/></a>
-                        </figure>
+                        </Figure>
                         <h2>DJ Girl</h2>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3 artist-single">
-                        <figure className="featured-image">
+                        <Figure className="featured-image">
                             <a href="#123">
                                 <img src="https://via.placeholder.com/255x295.png" alt=""/></a>
-                            <a href="#123" className="box-link">
-                                <img src="images/box.jpg" alt=""/></a>
-                        </figure>
+                        </Figure>
                         <h2>Stan Smith</h2>
                     </div>
                 </div>
