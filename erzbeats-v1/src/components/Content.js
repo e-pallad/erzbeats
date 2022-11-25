@@ -2,9 +2,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import AudioPlayer from 'react-h5-audio-player';
-import 'react-h5-audio-player/lib/styles.css';
-
 export default function Content() {
     return (
         <div className="content-section">
@@ -31,7 +28,6 @@ export default function Content() {
                                             <div className="entry-content">
                                                 <p>Quisque at erat eu libero consequat tempus. Quisque mole stie convallis tempus. Ut semper purus metus, a euismod sapien sodales ac. Duis viverra eleifend fermentum.
                                                 </p>
-                                                <AudioPlayer src="https://soundcloud.com/noah-strebe-387899902/another-love-ostekke" crossOrigin="anonymous" onPlay={e => console.log("onPlay")} />
                                             </div>
                                             <div className="box-link">
                                                 <a href="#somewhere"><img src="images/box.jpg" alt=""/></a>
