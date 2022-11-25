@@ -41,10 +41,10 @@ export default function Gallery() {
                 className='next-event-slider'
             >
                 <SwiperSlide>
-                    <div class="next-event-content">
-                        <figure class="featured-image">
+                    <div className="next-event-content">
+                        <figure className="featured-image">
                             <img src="https://via.placeholder.com/461x365.png" alt="" />
-                            <a href="#123" class="entry-content flex flex-column justify-content-center align-items-center">
+                            <a href="#123" className="entry-content flex flex-column justify-content-center align-items-center">
                                 <h3>ERZbeat 2023</h3>
                                 <p>Green Palace, 22 Street, 23-28, Los Angeles California</p>
                             </a>
@@ -52,10 +52,10 @@ export default function Gallery() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div class="next-event-content">
-                        <figure class="featured-image">
+                    <div className="next-event-content">
+                        <figure className="featured-image">
                             <img src="https://via.placeholder.com/461x365.png" alt="" />
-                            <a href="#123" class="entry-content flex flex-column justify-content-center align-items-center">
+                            <a href="#123" className="entry-content flex flex-column justify-content-center align-items-center">
                                 <h3>ERZbeat 2023</h3>
                                 <p>Green Palace, 22 Street, 23-28, Los Angeles California</p>
                             </a>
@@ -63,10 +63,10 @@ export default function Gallery() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div class="next-event-content">
-                        <figure class="featured-image">
+                    <div className="next-event-content">
+                        <figure className="featured-image">
                             <img src="https://via.placeholder.com/461x365.png" alt="" />
-                            <a href="#123" class="entry-content flex flex-column justify-content-center align-items-center">
+                            <a href="#123" className="entry-content flex flex-column justify-content-center align-items-center">
                                 <h3>ERZbeat 2023</h3>
                                 <p>Green Palace, 22 Street, 23-28, Los Angeles California</p>
                             </a>
@@ -74,10 +74,10 @@ export default function Gallery() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div class="next-event-content">
-                        <figure class="featured-image">
+                    <div className="next-event-content">
+                        <figure className="featured-image">
                             <img src="https://via.placeholder.com/461x365.png" alt="" />
-                            <a href="#123" class="entry-content flex flex-column justify-content-center align-items-center">
+                            <a href="#123" className="entry-content flex flex-column justify-content-center align-items-center">
                                 <h3>ERZbeat 2023</h3>
                                 <p>Green Palace, 22 Street, 23-28, Los Angeles California</p>
                             </a>
