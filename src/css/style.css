@@ -361,10 +361,12 @@ body {
 /*------------------------------------------------------------
 ## lineup-artists-headline
 ------------------------------------------------------------*/
+.philosophie-headline,
 .lineup-artists-headline {
     margin-top: 115px;
 }
 
+.philosophie-headline .entry-title p,
 .lineup-artists-headline .entry-title p {
     margin: 0;
     padding: 0;
@@ -374,6 +376,7 @@ body {
     font-family: 'mountains';
 }
 
+.philosophie-headline .entry-title h2,
 .lineup-artists-headline .entry-title h2 {
     width: 100%;
     font-size: 48px;
@@ -384,19 +387,23 @@ body {
 /*------------------------------------------------------------
 ## lineup-artists
 ------------------------------------------------------------*/
+.philosophie,
 .lineup-artists {
     padding-top: 80px;
 }
 
+.philosophie .featured-image,
 .lineup-artists .featured-image {
     margin: 0;
     padding: 0;
 }
 
+.philosophie .featured-image,
 .lineup-artists .featured-image {
     width: 100%;
 }
 
+.philosophie .featured-image img,
 .lineup-artists .featured-image img {
     width: 100%;
     max-width: 100%;
@@ -405,15 +412,18 @@ body {
 /*------------------------------------------------------------
 ### lineup-artists-wrap
 ------------------------------------------------------------*/
+.philosophie .philosophie-wrap,
 .lineup-artists .lineup-artists-wrap {
     margin-top: 80px;
 }
 
+.philosophie .philosophie-wrap .philosophie-description,
 .lineup-artists .lineup-artists-wrap .lineup-artists-description {
     position: relative;
     width: 100%;
 }
 
+.philosophie .philosophie-wrap .philosophie-description-container,
 .lineup-artists .lineup-artists-wrap .lineup-artists-description-container {
     position: relative;
     padding: 30px;
@@ -421,12 +431,14 @@ body {
     box-shadow: 50px 40px 115px rgba(0, 0, 0, 0.1);
 }
 
+.philosophie-description .entry-title,
 .lineup-artists-description .entry-title {
     font-size: 30px;
     font-weight: 600;
     color: hsl(0, 0%, 9%);
 }
 
+.philosophie-description .entry-content,
 .lineup-artists-description .entry-content {
     margin-top: 20px;
     font-size: 15px;
@@ -434,6 +446,7 @@ body {
     line-height: 2;
 }
 
+.philosophie .box-link,
 .lineup-artists-wrap .box-link {
     position: absolute;
     margin: 0;
@@ -443,12 +456,14 @@ body {
     z-index: 999;
 }
 
+.philosophie-wrap .box-link img,
 .lineup-artists-wrap .box-link img {
     opacity: 0.75;
     -webkit-filter: drop-shadow(3px 2px 0 rgba(0,0,0,0.2));
     filter: drop-shadow(3px 2px 0 rgba(0,0,0,0.2));
 }
 
+.philosophie-wrap .box-link img:hover,
 .lineup-artists-wrap .box-link img:hover {
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
@@ -457,16 +472,27 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+    .philosophie .philosophie-wrap,
     .lineup-artists .lineup-artists-wrap {
         margin-top: 30px;
     }
 
+    .philosophie .featured-image,
     .lineup-artists .featured-image {
         max-width: 360px;
     }
 
+    .philosophie .philosophie-wrap .philosophie-description,
     .lineup-artists .lineup-artists-wrap .lineup-artists-description {
         width: calc(100% - 360px);
+    }
+
+    .philosophie .philosophie-wrap .philosophie-description-container {
+        position: absolute;
+        z-index: 99;
+        top: 40px;
+        left: -75px;
+        width: calc(100% + 75px);
     }
 
     .lineup-artists .lineup-artists-wrap .lineup-artists-description-container {
@@ -477,11 +503,13 @@ body {
         width: calc(100% + 75px);
     }
 
+    .philosophie .philosophie-wrap:nth-of-type(even) .philosophie-description-container,
     .lineup-artists .lineup-artists-wrap:nth-of-type(even) .lineup-artists-description-container {
         right: -75px;
         left: auto;
     }
 
+    .philosophie .philosophie-wrap:nth-last-of-type(even) .box-link,
     .lineup-artists .lineup-artists-wrap:nth-of-type(even) .box-link {
         right: auto;
         left: 50px;
@@ -489,6 +517,7 @@ body {
 }
 
 @media screen and (min-width: 992px) {
+    .philosophie .philosophie-wrap .philosophie-description-container,
     .lineup-artists .lineup-artists-wrap .lineup-artists-description-container {
         padding: 50px;
     }
@@ -496,10 +525,12 @@ body {
 
 
 @media screen and (min-width: 1200px) {
+    .philosophie .philosophie-wrap .philosophie-description-container,
     .lineup-artists .lineup-artists-wrap .lineup-artists-description-container {
         max-width: 660px;
     }
 
+    .philosophie .philosophie-wrap:nth-last-of-type(1),
     .lineup-artists .lineup-artists-wrap:nth-last-of-type(1) {
         margin-left: 80px;
     }
