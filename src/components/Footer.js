@@ -29,8 +29,15 @@ export default function Footer() {
                             <div className="entry-mail">
                                 <a href="mailto:frage@erzbeats.de">FRAGE@ERZBEATS.DE</a>
                             </div>
-                            <div className="footer-links">
-                                <a href="/impressum">Impressum</a>
+                            <div className="footer-links justify-content-md-center">
+                                <Row>
+                                    <Col>
+                                        <a href="/impressum">Impressum</a>
+                                    </Col>
+                                    <Col>
+                                        <a href="/datenschutz">Datenschutzerklärung</a>
+                                    </Col>
+                                </Row>
                             </div>
                             <div className="copyright-info">
                                 Copyright ©{new Date().getFullYear()} All rights reserved | This page is made with &#9825; by devfluent
