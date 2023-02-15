@@ -7,7 +7,7 @@ export default function Impressum() {
         <div className="content-impressum">
             <Container>
                 <Row className="mt-5">
-                    <Col xs={6}>
+                    <Col md={6}>
                         <h2 className='content-impressum-headline'>Impressum</h2>
                         <p>
                             Erzbeats Lichtenberg e.V.<br />
@@ -18,7 +18,7 @@ export default function Impressum() {
                             <a href='tel:+4915204068259' className='content-impressum-link'>+4915204068259</a><br />
                         </p>
                     </Col>
-                    <Col xs={6}>
+                    <Col md={6}>
                         <h2 className='content-impressum-headline'>Kontakt Bookings:</h2>
                         <p>
                             Raphael Böhme<br />
