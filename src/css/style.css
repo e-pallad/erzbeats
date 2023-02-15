@@ -1873,6 +1873,7 @@ swiper-button-next:after {
 .content-impressum {
     background-color: #232127;
     padding-top: 165px;
+    padding-bottom: 1rem;
 }
 
 .content-impressum a.content-impressum-link {
@@ -1886,6 +1887,7 @@ swiper-button-next:after {
 .content-contact {
     background-color: #232127;
     padding-top: 165px;
+    padding-bottom: 1rem;
 }
 
 .content-contact .form-group {
@@ -1903,6 +1905,7 @@ swiper-button-next:after {
 .content-not-found {
     background-color: #232127;
     padding-top: 165px;
+    padding-bottom: 1rem;
 }
 
 .content-not-found .content-not-found-link {

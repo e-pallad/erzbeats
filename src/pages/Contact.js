@@ -32,7 +32,7 @@ export default function Contact() {
     };
 
     return (
-        <div className="content-section content-contact">
+        <div className="content-contact">
             <Container>
                 <Row className="mt-5">
                     <Col xs={12} md={{ span: 8, offset: 2 }}>

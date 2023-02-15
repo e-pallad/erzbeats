@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Page404() {
     return (
-        <div className="content-section content-not-found">
+        <div className="content-not-found">
             <Container>
                 <h2 className='content-impressum-headline'>Whoops!</h2>
                 <p>
