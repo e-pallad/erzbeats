@@ -34,6 +34,8 @@ export default function Footer() {
                                     <Col>
                                         <a href="/impressum">Impressum</a>
                                     </Col>
+                                </Row>
+                                <Row>
                                     <Col>
                                         <a href="/datenschutz">Datenschutzerklärung</a>
                                     </Col>
