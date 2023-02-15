@@ -46,12 +46,12 @@ export default function Footer() {
                         <h5>Unsere Partner</h5>
                             <Row className="justify-content-around">
                                 <Col md={{ span: 12 }}>
-                                    <a href="https://www.homag.com/" target={"_blank"} rel={"noreferrer"} style={{ backgroundColor: "white" }} >
-                                        <img src={require("../images/homag.png")} alt="Homag Group" height={"auto"} width={"150px"} />
+                                    <a href="https://www.homag.com/" target={"_blank"} rel={"noreferrer"}>
+                                        <img src={require("../images/homag.png")} alt="Homag Group" height={"auto"} width={"150px"} style={{ backgroundColor: "white" }} />
                                     </a>
                                 </Col>
                             </Row>
-                            <Row>
+                            <Row className="mt-3">
                                 <Col md={{ span: 12 }}>
                                     <a href="https://soliq.me" target={"_blank"} rel={"noreferrer"}>
                                         <img src={require("../images/soliq.png")} alt="SOLIQ Premiumliköre" height={"150px"} width={"150px"} />
