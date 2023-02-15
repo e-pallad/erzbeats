@@ -87,6 +87,7 @@ body {
 }
 
 .offcanvas-title {
+    font-family: "mountains";
     color: #03070c;
     font-size: 28px;
 }
@@ -207,7 +208,7 @@ body {
 -----------------------------------------------------------*/
 .hero-content {
     padding: 220px 0;
-    background: url('../images/cover.jpg') no-repeat;
+    background: linear-gradient(0deg, hsla(0, 0%, 5%, 0.7), hsla(0, 0%, 5%, 0.5)),url('../images/cover.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -220,7 +221,7 @@ body {
     padding: 50px;
     margin: 0;
     font-family: mountains;
-    font-size: 120px;
+    font-size: 20vw;
     background: -webkit-linear-gradient(#ffffff, #cecece);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -294,7 +295,8 @@ body {
     font-weight: 600;
 }
 
-.hero-content .entry-footer a:hover, .hero-content .entry-footer .current {
+.hero-content .entry-footer a:hover, 
+.hero-content .entry-footer .current {
     background: -webkit-linear-gradient(#00d0ff, #25ffbf);
     color: hsl(0, 0%, 0%);
 }
@@ -302,16 +304,47 @@ body {
 /*------------------------------------------------------------
 # The Lineup Artists - Headliners
 ------------------------------------------------------------*/
+/*
 .content-section {
-    /*
     min-height: 4640px;
-    */
     width: 100%;
     padding-bottom: 120px;
-    /*
     background: url("images/middle-cover.jpg") no-repeat;
-    */
     background-size: 100% auto;
+}
+*/
+
+.content-section {
+    background: linear-gradient(217deg, #cecece, #d4d4d4, #dadada, #e0e0e0, #e7e7e7, #ededed, #f3f3f3, #f9f9f9);
+    background-size: 1600% 1600%;
+
+    -webkit-animation: menuBackground 21s ease infinite;
+    -moz-animation: menuBackground 21s ease infinite;
+    -o-animation: menuBackground 21s ease infinite;
+    animation: menuBackground 21s ease infinite;
+
+    padding-bottom: 120px;
+}
+
+@-webkit-keyframes menuBackground {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+@-moz-keyframes menuBackground {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+@-o-keyframes menuBackground {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+@keyframes menuBackground {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
 }
 
 .content-section .middle-cover {
@@ -337,6 +370,7 @@ body {
     font-size: 14px;
     font-weight: 600;
     color: hsl(0, 0%, 48%);
+    font-family: 'mountains';
 }
 
 .lineup-artists-headline .entry-title h2 {
@@ -406,6 +440,19 @@ body {
     top: -24px;
     right: 50px;
     z-index: 999;
+}
+
+.lineup-artists-wrap .box-link img {
+    opacity: 0.75;
+    -webkit-filter: drop-shadow(3px 2px 0 rgba(0,0,0,0.2));
+    filter: drop-shadow(3px 2px 0 rgba(0,0,0,0.2));
+}
+
+.lineup-artists-wrap .box-link img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    opacity: 1;
+    transition: .8s all ease;
 }
 
 @media screen and (min-width: 768px) {
@@ -567,27 +614,6 @@ body {
     .the-complete-lineup-artists .artist-single:nth-child(8) {
         margin-top: 75px;
     }
-}
-
-/*------------------------------------------------------------
-# see the-complete-lineup button
-------------------------------------------------------------*/
-.see-complete-lineup {
-    margin-top: 105px
-}
-
-.see-complete-lineup .entry-footer .btn {
-    padding: 15px 35px;
-    border-radius: 0;
-    margin-right: 20px;
-    background: -webkit-linear-gradient(#00d0ff, #25ffbf);
-    font-weight: 500;
-}
-
-.see-complete-lineup .entry-footer a {
-    font-size: 14px;
-    font-weight: 600;
-    color: hsl(0, 0%, 100%);
 }
 
 /*------------------------------------------------------------
@@ -803,6 +829,7 @@ swiper-button-next:after {
     padding: 40px 0 30px;
     background: url(../images/footer-cover.jpg) no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .site-footer::before {
@@ -817,16 +844,23 @@ swiper-button-next:after {
 }
 
 .site-footer .footer-cover-title {
-    min-height: 480px;
+    min-height: 430px;
     width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+    .site-footer .footer-cover-title {
+        min-height: 700px;
+    }
+}
+
 .site-footer .footer-cover-title h2 {
-    font-size: 20vw;
+    font-size: 15vw;
     font-weight: 700;
     line-height: 1;
     margin-bottom: 0;
     text-align: center;
+    font-family: "mountains";
     color: hsl(0, 0%, 100%);
     mix-blend-mode: overlay;
     z-index: 2;
@@ -853,6 +887,7 @@ swiper-button-next:after {
 .footer-content-wrapper .entry-title {
     text-align: center;
     margin-top: 25px;
+    font-family: "mountains";
 }
 
 .footer-content-wrapper .entry-title a {
@@ -870,41 +905,27 @@ swiper-button-next:after {
 }
 
 .footer-content-wrapper .entry-mail {
-    margin-top: 16px;
+    margin-top: 55px;
     font-size: 16px;
     font-weight: 700;
     color: hsl(0, 0%, 100%);
 }
 
-.footer-content-wrapper .entry-mail a {
+.footer-content-wrapper .entry-mail a,
+.footer-content-wrapper .footer-links a {
     text-decoration: none;
     color: hsl(0, 0%, 100%);
 }
 
-.footer-content-wrapper .copyright-info {
+.footer-content-wrapper .copyright-info,
+.footer-content-wrapper .footer-links {
     margin-top: 20px;
     font-size: 12px;
     color: hsl(0, 0%, 100%);
 }
 
-.footer-content-wrapper .footer-social {
+.footer-content-wrapper .footer-col {
     margin-top: 32px;
-}
-
-.footer-content-wrapper .footer-social .flex {
-    flex-direction: row !important;
-}
-
-.footer-content-wrapper .footer-social ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.footer-content-wrapper .footer-social ul a {
-    padding: 5px 16px;
-    font-size: 12px;
-    color: hsl(0, 0%, 100%);
 }
 
 /*------------------------------------------------------------
@@ -1844,4 +1865,47 @@ swiper-button-next:after {
 
 .icon-box-3 .entry-header::before {
     content: "03.";
+}
+
+/*------------------------------------------------------------
+# Impressum
+------------------------------------------------------------*/
+.content-impressum {
+    background-color: #232127;
+    padding-top: 165px;
+}
+
+.content-impressum a.content-impressum-link {
+    color: hsl(0, 0%, 90%);
+    text-decoration: none!important;
+}
+
+/*------------------------------------------------------------
+# Contact page
+------------------------------------------------------------*/
+.content-contact {
+    background-color: #232127;
+    padding-top: 165px;
+}
+
+.content-contact .form-group {
+    padding-bottom: 10px;
+}
+
+.content-contact .content-contact-link {
+    color: hsl(0, 0%, 90%);
+    text-decoration: none!important;
+}
+
+/*------------------------------------------------------------
+# 404 page
+------------------------------------------------------------*/
+.content-not-found {
+    background-color: #232127;
+    padding-top: 165px;
+}
+
+.content-not-found .content-not-found-link {
+    color: hsl(0, 0%, 90%);
+    text-decoration: none!important;
 }

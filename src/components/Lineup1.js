@@ -3,10 +3,10 @@ import Col from "react-bootstrap/Col";
 export default function Lineup1() {
     return (
         <Col xs="12">
-            <div className="lineup-artists-headline">
+            <div id="lineup" className="lineup-artists-headline">
                 <div className="entry-title">
-                    <p>ERZbeat 2023</p>
-                    <h2>Lineup Variante 1</h2>
+                    <p>ERZbeats 2023</p>
+                    <h2>Lineup</h2>
                 </div>
                 <div className="lineup-artists">
                     <div className="lineup-artists-wrap flex flex-wrap">
@@ -25,7 +25,7 @@ export default function Lineup1() {
                                     </p>
                                 </div>
                                 <div className="box-link">
-                                    <a href="#somewhere"><img src="images/box.jpg" alt=""/></a>
+                                    <a href="#somewhere"><img src={require("../images/box.png")} alt="" width={52} height={52} /></a>
                                 </div>
                             </div>
                         </div>
@@ -46,7 +46,7 @@ export default function Lineup1() {
                                     </p>
                                 </div>
                                 <div className="box-link">
-                                    <a href="#somewhere"><img src="images/box.jpg" alt=""/></a>
+                                    <a href="#somewhere"><img src={require("../images/box.png")} alt="" width={52} height={52} /></a>
                                 </div>
                             </div>
                         </div>
@@ -73,7 +73,7 @@ export default function Lineup1() {
                                 </div>
                                 <div className="box-link">
                                     <a href="#somewhere">
-                                        <img src="images/box.jpg" alt=""/></a>
+                                        <img src={require("../images/box.png")} alt="" width={52} height={52} /></a>
                                 </div>
                             </div>
                         </div>

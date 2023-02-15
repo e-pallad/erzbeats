@@ -20,7 +20,7 @@ export default function Header() {
         <header className='site-header'>
             <Navbar key='lg' expand='lg' className='header-bar'>
                 <Container fluid>
-                    <Navbar.Brand href='/home' className='site-branding'>
+                    <Navbar.Brand href='/' className='site-branding'>
                         {process.env.REACT_APP_PROJEKTNAME}
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
@@ -30,7 +30,7 @@ export default function Header() {
                         placement="start"
                     >
                         <Offcanvas.Header closeButton>
-                            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
+                            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`} className='site-branding'>
                                 {process.env.REACT_APP_PROJEKTNAME}
                             </Offcanvas.Title>
                         </Offcanvas.Header>
@@ -38,10 +38,7 @@ export default function Header() {
                             <Nav className={`${isMobile ? "site-navigation" : "hidden site-navigation"}`} as={'nav'}>
                                 <ul>
                                     <Nav.Item as={'li'}>
-                                        <Nav.Link href="/home">Home</Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item as={'li'}>
-                                        <Nav.Link href="/artists">Artists</Nav.Link>
+                                        <Nav.Link href="/">Home</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item as={'li'}>
                                         <Nav.Link href="/contact">Kontakt</Nav.Link>

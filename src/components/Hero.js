@@ -14,11 +14,11 @@ const renderer = ({
     seconds,
     completed
 }) => {
-    if (completed) { // Render a completed state
+    if (completed) {
         return <Completionist/>;
-    } else { // Render a countdown
+    } else {
         return (
-            <div className="countdown flex flex-wrap justify-content-between">
+            <div className="countdown flex flex-wrap justify-content-between text-center">
                 <div className="countdown-holder">
                     <div className="dday">
                         {days}</div>
@@ -49,26 +49,22 @@ export default function Hero() {
         <div className='hero-content'>
             <Container>
                 <Row>
-                    <Col xs="12"
-                        lg={
-                            {
-                                span: 10,
-                                offset: 2
-                            }
-                    }>
+                    <Col xs="12" lg={{ span: 10, offset: 2 }}>
                         <div className='entry-header'>
                             <h2>Die Party des Sommers '23</h2>
                             {/*<div className='entry-meta-date'>01.07.2023</div>*/} </div>
-                        <Countdown date='2023-07-01T15:00:00'
+                        <Countdown 
+                            date='2023-07-01T15:00:00'
                             daysInHours={false}
-                            renderer={renderer}/>
+                            renderer={renderer}
+                        />
                     </Col>
                 </Row>
                 <Row>
                     <Col xs="12">
                         <div className='entry-footer'>
                             <a href='/buytickets' className='btn'>Tickets</a>
-                            <a href='/lineup' className='btn current'>Lineup</a>
+                            <a href='#lineup' className='btn'>Lineup</a>
                         </div>
                     </Col>
                 </Row>
