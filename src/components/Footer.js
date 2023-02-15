@@ -45,16 +45,16 @@ export default function Footer() {
                         <Col xl={{ span: 4 }} lg={{ span: 4, order: 3 }} md={{ span: 6, order: 2 }} xs={{ span: 12, order: 2 }} className="footer-col">
                         <h5>Unsere Partner</h5>
                             <Row className="justify-content-around">
-                                <Col md={{ span: 6 }}>
-                                    <a href="#!" target={"_blank"} rel={"noreferrer"}>
-                                        <img src="https://via.placeholder.com/120x120.png" alt="Partner 1" />
-                                        {/*<img src={require("../images/box.png")} alt="Partner 1" />*/}
+                                <Col md={{ span: 12 }}>
+                                    <a href="https://www.homag.com/" target={"_blank"} rel={"noreferrer"} style={{ backgroundColor: "white" }} >
+                                        <img src={require("../images/homag.png")} alt="Homag Group" height={"auto"} width={"150px"} />
                                     </a>
                                 </Col>
-                                <Col md={{ span: 6 }}>
+                            </Row>
+                            <Row>
+                                <Col md={{ span: 12 }}>
                                     <a href="https://soliq.me" target={"_blank"} rel={"noreferrer"}>
-                                        <img src="https://via.placeholder.com/120x120.png" alt="Soliq Liköre" />
-                                        {/**<img src={require("../images/box.png")} alt="Partner 2" />*/}
+                                        <img src={require("../images/soliq.png")} alt="SOLIQ Premiumliköre" height={"150px"} width={"150px"} />
                                     </a>
                                 </Col>
                             </Row>
