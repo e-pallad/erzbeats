@@ -223,6 +223,7 @@ body {
     font-family: mountains;
     font-size: 20vw;
     background: -webkit-linear-gradient(#ffffff, #cecece);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
