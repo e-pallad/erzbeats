@@ -63,7 +63,7 @@ export default function Hero() {
                 <Row>
                     <Col xs="12">
                         <div className='entry-footer'>
-                            <a href='/buytickets' className='btn'>Tickets</a>
+                            <a href='https://erzbeats.ticket.io' target={"_blank"} rel={"noreferrer"} className='btn'>Tickets</a>
                             <a href='#lineup' className='btn'>Lineup</a>
                         </div>
                     </Col>
