@@ -498,9 +498,21 @@ body {
     .lineup-artists .lineup-artists-wrap .lineup-artists-description-container {
         position: absolute;
         z-index: 99;
-        top: 100px;
         left: -75px;
         width: calc(100% + 75px);
+    }
+
+    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.blvck-crowz,
+    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.justin-pollnik {
+        top: 50px;
+    }
+
+    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.darley-jefferson {
+        top: 30px;
+    }
+
+    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container {
+        top: 100px;
     }
 
     .philosophie .philosophie-wrap:nth-of-type(even) .philosophie-description-container,
