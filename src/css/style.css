@@ -1333,6 +1333,20 @@ swiper-button-next:after {
 }
 
 /*------------------------------------------------------------
+# Impressum
+------------------------------------------------------------*/
+.content-datenschutz {
+    background-color: #232127;
+    padding-top: 165px;
+    padding-bottom: 1rem;
+}
+
+.content-datenschutz a.content-datenschutz-link {
+    color: hsl(0, 0%, 90%);
+    /*text-decoration: none!important;*/
+}
+
+/*------------------------------------------------------------
 # Contact page
 ------------------------------------------------------------*/
 .content-contact {
