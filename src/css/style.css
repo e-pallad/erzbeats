@@ -881,6 +881,12 @@ swiper-button-next:after {
     text-align: center;
 }
 
+@media screen and (max-width: 991px) {
+    .footer-content-wrapper {
+        top: 5px;
+    }
+}
+
 .footer-content-wrapper .flex {
     flex-direction: column;
 }
@@ -892,16 +898,16 @@ swiper-button-next:after {
 }
 
 .footer-content-wrapper .entry-title a {
-    font-size: 52px;
+    font-size: 5.5vw;
     font-weight: 700;
     color: hsl(0, 0%, 100%);
     line-height: 1;
     text-decoration: none;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 1200px) {
     .footer-content-wrapper .entry-title a {
-        font-size: 100px;
+        font-size: 7vw;
     }
 }
 

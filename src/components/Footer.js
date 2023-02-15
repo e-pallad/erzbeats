@@ -11,7 +11,7 @@ export default function Footer() {
             <div className="footer-content-wrapper">
                 <Container>
                     <Row>
-                        <Col md={{ span: 4, order: 1 }} xs={{ span: 12, order: 1 }} className="footer-col">
+                        <Col xl={{ span: 4 }} lg={{ span: 4, order: 1 }} md={{ span: 6, order: 1 }} xs={{ span: 12, order: 1 }} className="footer-col">
                             <h5>Folge uns auf</h5>
                             <ul className="list-unstyled">
                                 <li>
@@ -22,9 +22,9 @@ export default function Footer() {
                                 </li>
                             </ul>
                         </Col>
-                        <Col md={{ span: 4, order: 2 }} xs={{ span: 12, order: 3 }} className="footer-col">
+                        <Col xl={{ span: 4 }} lg={{ span: 4, order: 2 }} md={{ span: 12, order: 3 }} xs={{ span: 12, order: 3 }} className="footer-col">
                             <div className="entry-title">
-                                <a href="/home">{process.env.REACT_APP_PROJEKTNAME}</a>
+                                <a href="/">{process.env.REACT_APP_PROJEKTNAME}</a>
                             </div>
                             <div className="entry-mail">
                                 <a href="mailto:frage@erzbeats.de">FRAGE@ERZBEATS.DE</a>
@@ -41,26 +41,30 @@ export default function Footer() {
                                     </Col>
                                 </Row>
                             </div>
-                            <div className="copyright-info">
-                                Copyright ©{new Date().getFullYear()} All rights reserved | This page is made with &#9825; by devfluent
-                            </div>
                         </Col>
-                        <Col md={{ span: 4, order: 3 }} xs={{ span: 12, order: 2 }} className="footer-col">
+                        <Col xl={{ span: 4 }} lg={{ span: 4, order: 3 }} md={{ span: 6, order: 2 }} xs={{ span: 12, order: 2 }} className="footer-col">
                         <h5>Unsere Partner</h5>
                             <Row className="justify-content-around">
-                                <Col>
+                                <Col md={{ span: 6 }}>
                                     <a href="#!" target={"_blank"} rel={"noreferrer"}>
                                         <img src="https://via.placeholder.com/120x120.png" alt="Partner 1" />
                                         {/*<img src={require("../images/box.png")} alt="Partner 1" />*/}
                                     </a>
                                 </Col>
-                                <Col>
+                                <Col md={{ span: 6 }}>
                                     <a href="https://soliq.me" target={"_blank"} rel={"noreferrer"}>
                                         <img src="https://via.placeholder.com/120x120.png" alt="Soliq Liköre" />
                                         {/**<img src={require("../images/box.png")} alt="Partner 2" />*/}
                                     </a>
                                 </Col>
                             </Row>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <div className="copyright-info">
+                                Copyright ©{new Date().getFullYear()} All rights reserved | This page is made with &#9825; by devfluent
+                            </div>
                         </Col>
                     </Row>
                 </Container>
