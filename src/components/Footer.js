@@ -47,7 +47,7 @@ export default function Footer() {
                         <h5>Unsere Partner</h5>
                             <Row className="justify-content-around">
                                 <Col>
-                                    <a href="#" target={"_blank"} rel={"noreferrer"}>
+                                    <a href="#!" target={"_blank"} rel={"noreferrer"}>
                                         <img src="https://via.placeholder.com/120x120.png" alt="Partner 1" />
                                         {/*<img src={require("../images/box.png")} alt="Partner 1" />*/}
                                     </a>
