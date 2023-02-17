@@ -35,7 +35,7 @@ export default function Footer() {
                                 </a>
                             </div>
                             <div className="entry-mail">
-                                <a href="mailto:frage@erzbeats.de">FRAGE@ERZBEATS.DE</a>
+                                <a href="mailto:info@erzbeats.de">INFO@ERZBEATS.DE</a>
                             </div>
                             <div className="footer-links justify-content-md-center">
                                 <Row>
