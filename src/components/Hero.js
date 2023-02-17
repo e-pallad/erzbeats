@@ -49,7 +49,7 @@ export default function Hero() {
         <div className='hero-content'>
             <Container>
                 <Row>
-                    <Col xs="12" lg={{ span: 10, offset: 2 }}>
+                    <Col>
                         <div className='entry-header'>
                             <h2>Die Party des Sommers '23</h2>
                             {/*<div className='entry-meta-date'>01.07.2023</div>*/} </div>
