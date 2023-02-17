@@ -37,7 +37,14 @@ export default function Header() {
                     >
                         <Offcanvas.Header closeButton>
                             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`} className='site-branding'>
-                                {process.env.REACT_APP_PROJEKTNAME}
+                                <img
+                                    alt="Erzbeats logo"
+                                    src={require("../images/erzbeats-mobile.png")}
+                                    width={"auto"}
+                                    height={120}
+                                    className="d-inline-block align-top"
+                                    loading="lazy"
+                                />
                             </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
