@@ -21,7 +21,13 @@ export default function Header() {
             <Navbar key='lg' expand='lg' className='header-bar'>
                 <Container fluid>
                     <Navbar.Brand href='/' className='site-branding'>
-                        {process.env.REACT_APP_PROJEKTNAME}
+                        <img
+                            alt="Erzbeats logo"
+                            src={require("../images/erzbeats.png")}
+                            width={"auto"}
+                            height={120}
+                            className="d-inline-block align-top"
+                        />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
                     <Navbar.Offcanvas

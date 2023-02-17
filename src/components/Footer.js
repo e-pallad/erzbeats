@@ -24,7 +24,15 @@ export default function Footer() {
                         </Col>
                         <Col xl={{ span: 4 }} lg={{ span: 4, order: 2 }} md={{ span: 12, order: 3 }} xs={{ span: 12, order: 3 }} className="footer-col">
                             <div className="entry-title">
-                                <a href="/">{process.env.REACT_APP_PROJEKTNAME}</a>
+                                <a href="/">
+                                    <img
+                                        alt="Erzbeats logo"
+                                        src={require("../images/erzbeats.png")}
+                                        width={"auto"}
+                                        height={135}
+                                        className="d-inline-block align-top"
+                                    />    
+                                </a>
                             </div>
                             <div className="entry-mail">
                                 <a href="mailto:frage@erzbeats.de">FRAGE@ERZBEATS.DE</a>
