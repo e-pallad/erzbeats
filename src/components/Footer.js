@@ -11,7 +11,7 @@ export default function Footer() {
             <div className="footer-content-wrapper">
                 <Container>
                     <Row>
-                        <Col xl={{ span: 4 }} lg={{ span: 4, order: 1 }} md={{ span: 6, order: 1 }} xs={{ span: 12, order: 1 }} className="footer-col">
+                        <Col xl={{ span: 4 }} md={{ span: 4, order: 1 }} xs={{ span: 12, order: 1 }} className="footer-col">
                             <h5>Folge uns auf</h5>
                             <ul className="list-unstyled">
                                 <li>
@@ -22,7 +22,7 @@ export default function Footer() {
                                 </li>
                             </ul>
                         </Col>
-                        <Col xl={{ span: 4 }} lg={{ span: 4, order: 2 }} md={{ span: 12, order: 3 }} xs={{ span: 12, order: 3 }} className="footer-col">
+                        <Col xl={{ span: 4 }} md={{ span: 4, order: 2 }} xs={{ span: 12, order: 3 }} className="footer-col">
                             <div className="entry-title">
                                 <a href="/">
                                     <img
@@ -50,7 +50,7 @@ export default function Footer() {
                                 </Row>
                             </div>
                         </Col>
-                        <Col xl={{ span: 4 }} lg={{ span: 4, order: 3 }} md={{ span: 6, order: 2 }} xs={{ span: 12, order: 2 }} className="footer-col">
+                        <Col xl={{ span: 4 }} md={{ span: 4, order: 3 }} xs={{ span: 12, order: 2 }} className="footer-col">
                         <h5>Unsere Partner</h5>
                             <Row className="justify-content-around">
                                 <Col md={{ span: 12 }}>

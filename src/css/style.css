@@ -892,6 +892,12 @@ swiper-button-next:after {
     width: 100%;
 }
 
+@media screen and (max-width: 991px) {
+    .site-footer .footer-cover-title {
+        min-height: 330px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .site-footer .footer-cover-title {
         min-height: 700px;
@@ -935,27 +941,11 @@ swiper-button-next:after {
 }
 
 .footer-content-wrapper .entry-title {
-    text-align: center;
     margin-top: 25px;
-    font-family: "mountains";
-}
-
-.footer-content-wrapper .entry-title a {
-    font-size: 5.5vw;
-    font-weight: 700;
-    color: hsl(0, 0%, 100%);
-    line-height: 1;
-    text-decoration: none;
-}
-
-@media screen and (max-width: 1200px) {
-    .footer-content-wrapper .entry-title a {
-        font-size: 7vw;
-    }
 }
 
 .footer-content-wrapper .entry-mail {
-    margin-top: 55px;
+    margin-top: 45px;
     font-size: 16px;
     font-weight: 700;
     color: hsl(0, 0%, 100%);
