@@ -25,13 +25,22 @@ export default function Footer() {
                         <Col xl={{ span: 4 }} md={{ span: 4, order: 2 }} xs={{ span: 12, order: 3 }} className="footer-col">
                             <div className="entry-title">
                                 <a href="/">
-                                    <img
-                                        alt="Erzbeats logo"
-                                        src={require("../images/erzbeats.png")}
-                                        width={"auto"}
-                                        height={135}
-                                        className="d-inline-block align-top"
-                                    />    
+                                    <picture>
+                                        <source 
+                                            alt="Erzbeats Logo"
+                                            srcSet={require("../images/erzbeats.webp")}
+                                            width={"auto"}
+                                            height={135}
+                                            className="d-inline-block align-top"
+                                        />
+                                        <img
+                                            alt="Erzbeats Logo"
+                                            src={require("../images/erzbeats.png")}
+                                            width={"auto"}
+                                            height={135}
+                                            className="d-inline-block align-top"
+                                        /> 
+                                    </picture>
                                 </a>
                             </div>
                             <div className="entry-mail">
@@ -55,14 +64,42 @@ export default function Footer() {
                             <Row className="justify-content-around">
                                 <Col md={{ span: 12 }}>
                                     <a href="https://www.homag.com/" target={"_blank"} rel={"noreferrer"}>
-                                        <img src={require("../images/homag.png")} alt="Homag Group" height={"auto"} width={"150px"} style={{ backgroundColor: "white" }} />
+                                        <picture>
+                                            <source 
+                                                srcSet={require("../images/homag.webp")} 
+                                                alt="Homag Group" 
+                                                height={"auto"} 
+                                                width={"150px"} 
+                                                style={{ backgroundColor: "white" }} 
+                                            />
+                                            <img 
+                                                src={require("../images/homag.png")} 
+                                                alt="Homag Group" 
+                                                height={"auto"} 
+                                                width={"150px"} 
+                                                style={{ backgroundColor: "white" }} 
+                                            />
+                                        </picture>
                                     </a>
                                 </Col>
                             </Row>
                             <Row className="mt-3">
                                 <Col md={{ span: 12 }}>
                                     <a href="https://soliq.me" target={"_blank"} rel={"noreferrer"}>
-                                        <img src={require("../images/soliq.png")} alt="SOLIQ Premiumliköre" height={"150px"} width={"150px"} />
+                                        <picture>
+                                            <source 
+                                                srcSet={require("../images/soliq.webp")} 
+                                                alt="SOLIQ Premiumliköre" 
+                                                height={"150px"} 
+                                                width={"150px"} 
+                                            />
+                                            <img 
+                                                src={require("../images/soliq.png")} 
+                                                alt="SOLIQ Premiumliköre" 
+                                                height={"150px"} 
+                                                width={"150px"} 
+                                            />
+                                        </picture>
                                     </a>
                                 </Col>
                             </Row>

@@ -12,7 +12,20 @@ export default function Lineup1() {
                     <div className="lineup-artists-wrap flex flex-wrap">
                         <figure className="featured-image">
                             <a href="https://www.instagram.com/blvckcrowz/" target={"_blank"} rel={"noreferrer"} alt="Instagram: Blvck Crows">
-                                <img src={require("../images/blvck-crows.png")} alt="Teaser: Blvck Crows" />
+                                <picture>
+                                    <source 
+                                        srcSet={require("../images/blvck-crows.webp")} 
+                                        alt="Teaser: Blvck Crows"
+                                        width={360}
+                                        height="auto"
+                                    />
+                                    <img 
+                                        src={require("../images/blvck-crows.png")} 
+                                        alt="Teaser: Blvck Crows" 
+                                        width={360}
+                                        height="auto"
+                                    />
+                                </picture>
                             </a>
                         </figure>
                         <div className="lineup-artists-description">
@@ -27,7 +40,20 @@ export default function Lineup1() {
                                 </div>
                                 <div className="box-link">
                                     <a href="https://soundcloud.com/blvckcrowz" target={"_blank"} rel={"noreferrer"} alt="Blvck Crows Soundcloud Link">
-                                        <img src={require("../images/box.png")} alt="Blvck Crows Soundcloud Link" width={52} height={52} />
+                                        <picture>
+                                            <source 
+                                                srcSet={require("../images/box.webp")} 
+                                                alt="Blvck Crows Soundcloud Link" 
+                                                width={52} 
+                                                height={52}
+                                            />
+                                            <img 
+                                                src={require("../images/box.png")} 
+                                                alt="Blvck Crows Soundcloud Link" 
+                                                width={52} 
+                                                height={52} 
+                                            />
+                                        </picture>
                                     </a>
                                 </div>
                             </div>
@@ -37,7 +63,20 @@ export default function Lineup1() {
                         <div className="lineup-artists-description">
                             <figure className="featured-image d-md-none">
                                 <a href="#somewhere" target={"_blank"} rel={"noreferrer"} alt="Instagram: Darley Jefferson">
-                                    <img src={require("../images/darley-jefferson.png")} alt="Teaser: Darley Jefferson" />
+                                    <picture>
+                                        <source 
+                                            srcSet={require("../images/darley-jefferson.webp")} 
+                                            alt="Teaser: Darley Jefferson"
+                                            width={360}
+                                            height="auto"
+                                        />
+                                        <img 
+                                            src={require("../images/darley-jefferson.png")} 
+                                            alt="Teaser: Darley Jefferson" 
+                                            width={360}
+                                            height="auto"
+                                        />
+                                    </picture>
                                 </a>
                             </figure>
                             <div className="lineup-artists-description-container darley-jefferson">
@@ -51,21 +90,60 @@ export default function Lineup1() {
                                 </div>
                                 <div className="box-link">
                                     <a href="#somewhere" target={"_blank"} rel={"noreferrer"} alt="Darley Jefferson Soundcloud Link">
-                                        <img src={require("../images/box.png")} alt="Darley Jefferson Soundcloud Link" width={52} height={52} />
+                                        <picture>
+                                            <source 
+                                                srcSet={require("../images/box.webp")} 
+                                                alt="Blvck Crows Soundcloud Link" 
+                                                width={52} 
+                                                height={52}
+                                            />
+                                            <img 
+                                                src={require("../images/box.png")} 
+                                                alt="Blvck Crows Soundcloud Link" 
+                                                width={52} 
+                                                height={52} 
+                                            />
+                                        </picture>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <figure className="featured-image d-none d-md-block">
                             <a href="#somewhere" target={"_blank"} rel={"noreferrer"}>
-                                <img src={require("../images/darley-jefferson.png")} alt="Teaser: Darley Jefferson" />
+                                <picture>
+                                    <source 
+                                        srcSet={require("../images/darley-jefferson.webp")} 
+                                        alt="Teaser: Darley Jefferson"
+                                        width={360}
+                                        height="auto"
+                                    />
+                                    <img 
+                                        src={require("../images/darley-jefferson.png")} 
+                                        alt="Teaser: Darley Jefferson" 
+                                        width={360}
+                                        height="auto"
+                                    />
+                                </picture>
                             </a>
                         </figure>
                     </div>
                     <div className="lineup-artists-wrap flex flex-wrap">
                         <figure className="featured-image">
                             <a href="https://www.instagram.com/oscar_house_/" target={"_blank"} rel={"noreferrer"} alt="Instagram: Oscar House">
-                                <img src={require("../images/oscar-house.png")} alt="Teaser: Oscar House" />
+                                <picture>
+                                    <source 
+                                        srcSet={require("../images/oscar-house.webp")}
+                                        alt="Teaser: Oscar House"
+                                        width={360}
+                                        height="auto"
+                                    />
+                                    <img 
+                                        src={require("../images/oscar-house.png")} 
+                                        alt="Teaser: Oscar House" 
+                                        width={360}
+                                        height="auto"
+                                    />
+                                </picture>
                             </a>
                         </figure>
                         <div className="lineup-artists-description">
@@ -82,7 +160,20 @@ export default function Lineup1() {
                                 </div>
                                 <div className="box-link">
                                     <a href="https://soundcloud.com/oscar_house" target={"_blank"} rel={"noreferrer"} alt="Oscar House Soundcloud Link">
-                                        <img src={require("../images/box.png")} alt="Oscar House Soundcloud Link" width={52} height={52} />
+                                        <picture>
+                                            <source 
+                                                srcSet={require("../images/box.webp")} 
+                                                alt="Blvck Crows Soundcloud Link" 
+                                                width={52} 
+                                                height={52}
+                                            />
+                                            <img 
+                                                src={require("../images/box.png")} 
+                                                alt="Blvck Crows Soundcloud Link" 
+                                                width={52} 
+                                                height={52} 
+                                            />
+                                        </picture>
                                     </a>
                                 </div>
                             </div>
@@ -92,7 +183,20 @@ export default function Lineup1() {
                         <div className="lineup-artists-description">
                             <figure className="featured-image d-md-none">
                                 <a href="#somewhere" target={"_blank"} rel={"noreferrer"} alt="Instagram: Justin Pollnik">
-                                    <img src={require("../images/justin-pollnik.jpg")} alt="Teaser: Justin Pollnik" />
+                                    <picture>
+                                        <source 
+                                            srcSet={require("../images/justin-pollnik.webp")} 
+                                            alt="Teaser: Justin Pollnik"
+                                            width={360}
+                                            height="auto"
+                                        />
+                                        <img 
+                                            src={require("../images/justin-pollnik.jpg")} 
+                                            alt="Teaser: Justin Pollnik" 
+                                            width={360}
+                                            height="auto"
+                                        />
+                                    </picture>
                                 </a>
                             </figure>
                             <div className="lineup-artists-description-container justin-pollnik">
@@ -110,14 +214,40 @@ export default function Lineup1() {
                                 </div>
                                 <div className="box-link">
                                     <a href="#somewhere" target={"_blank"} rel={"noreferrer"} alt="Juston Pollnik Soundcloud Link">
-                                        <img src={require("../images/box.png")} alt="Juston Pollnik Soundcloud Link" width={52} height={52} />
+                                        <picture>
+                                            <source 
+                                                srcSet={require("../images/box.webp")} 
+                                                alt="Blvck Crows Soundcloud Link" 
+                                                width={52} 
+                                                height={52}
+                                            />
+                                            <img 
+                                                src={require("../images/box.png")} 
+                                                alt="Blvck Crows Soundcloud Link" 
+                                                width={52} 
+                                                height={52} 
+                                            />
+                                        </picture>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <figure className="featured-image d-none d-md-block">
                             <a href="#somewhere" target={"_blank"} rel={"noreferrer"}>
-                                <img src={require("../images/justin-pollnik.jpg")} alt="Teaser: Justin Pollnik" />
+                                <picture>
+                                    <source 
+                                        srcSet={require("../images/justin-pollnik.webp")} 
+                                        alt="Teaser: Justin Pollnik"
+                                        width={360}
+                                        height="auto"
+                                    />
+                                    <img 
+                                        src={require("../images/justin-pollnik.jpg")} 
+                                        alt="Teaser: Justin Pollnik" 
+                                        width={360}
+                                        height="auto"
+                                    />
+                                </picture>
                             </a>
                         </figure>
                     </div>

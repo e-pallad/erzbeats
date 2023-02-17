@@ -21,13 +21,22 @@ export default function Header() {
             <Navbar key='lg' expand='lg' className='header-bar'>
                 <Container fluid>
                     <Navbar.Brand href='/' className='site-branding'>
-                        <img
-                            alt="Erzbeats logo"
-                            src={require("../images/erzbeats.png")}
-                            width={"auto"}
-                            height={120}
-                            className="d-inline-block align-top"
-                        />
+                        <picture>
+                            <source 
+                                alt="Erzbeats logo"
+                                srcSet={require("../images/erzbeats.webp")} 
+                                width={"auto"}
+                                height={130}
+                                className="d-inline-block align-top"
+                            />
+                            <img
+                                alt="Erzbeats logo"
+                                src={require("../images/erzbeats.png")}
+                                width={"auto"}
+                                height={130}
+                                className="d-inline-block align-top"
+                            />
+                        </picture>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
                     <Navbar.Offcanvas
@@ -37,14 +46,22 @@ export default function Header() {
                     >
                         <Offcanvas.Header closeButton>
                             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`} className='site-branding'>
-                                <img
-                                    alt="Erzbeats logo"
-                                    src={require("../images/erzbeats-mobile.png")}
-                                    width={"auto"}
-                                    height={120}
-                                    className="d-inline-block align-top"
-                                    loading="lazy"
-                                />
+                                <picture>
+                                    <source 
+                                        alt="Erzbeats Logo"
+                                        srcSet={require("../images/erzbeats.webp")} 
+                                        width={"auto"}
+                                        height={120}
+                                        className="d-inline-block align-top"
+                                    />
+                                    <img
+                                        alt="Erzbeats Logo"
+                                        src={require("../images/erzbeats.png")}
+                                        width={"auto"}
+                                        height={120}
+                                        className="d-inline-block align-top"
+                                    />
+                                </picture>
                             </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>

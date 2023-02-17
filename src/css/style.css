@@ -511,6 +511,10 @@ body {
         top: 30px;
     }
 
+    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.oscar-house {
+        top: 70px;
+    }
+
     .lineup-artists .lineup-artists-wrap .lineup-artists-description-container {
         top: 100px;
     }
