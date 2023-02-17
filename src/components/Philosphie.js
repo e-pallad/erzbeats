@@ -13,7 +13,7 @@ export default function Philosophie() {
                         <div className="philosophie">
                             <div className="philosophie-wrap flex flex-wrap">
                                 <figure className="featured-image">
-                                    <img src={require("../images/philosophie.jpg")} alt="Menschen genießen Musik" width={420} height={360} />
+                                    <img src={require("../images/philosophie.jpg")} alt="Menschen genießen Musik" />
                                 </figure>
                                 <div className="philosophie-description">
                                     <div className="philosophie-description-container">

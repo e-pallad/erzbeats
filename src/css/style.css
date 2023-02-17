@@ -385,7 +385,7 @@ body {
 }
 
 /*------------------------------------------------------------
-## lineup-artists
+## philosopie
 ------------------------------------------------------------*/
 .philosophie,
 .lineup-artists {
@@ -490,7 +490,7 @@ body {
     .philosophie .philosophie-wrap .philosophie-description-container {
         position: absolute;
         z-index: 99;
-        top: 40px;
+        top: 85px;
         left: -75px;
         width: calc(100% + 75px);
     }
