@@ -15,7 +15,7 @@ const renderer = ({
     completed
 }) => {
     if (completed) {
-        return <Completionist/>;
+        return <Completionist />;
     } else {
         return (
             <div className="countdown flex flex-wrap justify-content-between text-center">
