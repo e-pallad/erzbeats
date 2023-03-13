@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Philosophie from '../components/Philosphie';
 import Lineup1 from '../components/Lineup1';
 import Hero from '../components/Hero';
+import Anreise from '../components/Anreise';
 /*
 import Lineup2 from '../components/Lineup2';
 import Gallery from '../components/Gallery';
@@ -26,6 +27,9 @@ export default function Home() {
                     <Lineup2 />
                 </Row>
                 */}
+                <Row>
+                    <Anreise />
+                </Row>
             </Container>
             {/**
             <Gallery />

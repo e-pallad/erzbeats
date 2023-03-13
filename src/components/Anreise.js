@@ -1,0 +1,53 @@
+import React, { Component } from 'react';
+import Iframe from 'react-iframe'
+import { Button, Row, Col } from 'react-bootstrap';
+
+export default class Anreise extends Component {
+    constructor() {
+        super();
+        this.state = { 
+            mapStatus: false,
+        };
+    }
+
+    mapOpen = () => {
+        this.setState({ mapStatus: true });
+    }
+
+    render() {
+        const accepted = this.state.mapStatus;
+        console.log(accepted)
+        return (
+            <Col xs="12">
+                <div id="anreise" className="anreise-headline">
+                    <div className="entry-title">
+                        <p>ERZbeats 2023</p>
+                        <h2>Anreise</h2>
+                    </div>
+                    <Row>
+                        <Col className="anreise-map">
+                            {!accepted ? (
+                                <div className='map-disclaimer'>
+                                    <p>Mit einem Klick auf den Button akzeptierst du das Daten an und Cookies von Google gesendet und geladen werden.</p>
+                                    <p>Alternativ findest du die Karte auch hier: <a href="https://www.google.com/maps/d/u/0/viewer?mid=1nPvFzdbPH-ih4n0rNWR-knrGp7kSthA&ll=50.8345697050548%2C13.435202250000033&z=19" target="_blank" rel="noreferrer">Google Maps</a></p>
+                                    <Button variant="secondary" onClick={this.mapOpen}>Zeige Google Map</Button>
+                                </div>
+                            ) : (
+                                <Iframe url="https://www.google.com/maps/d/embed?mid=1nPvFzdbPH-ih4n0rNWR-knrGp7kSthA&ehbc=2E312F"
+                                    width="600px"
+                                    height="450px"
+                                    className="map"
+                                />
+                            )}
+                        </Col>
+                        <Col className='anreise-text'>
+                            <p>
+
+                            </p>
+                        </Col>
+                    </Row>
+                </div>
+            </Col>
+        );
+    }
+}
