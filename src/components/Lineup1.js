@@ -254,6 +254,5 @@ export default function Lineup1() {
                 </div>
             </div>
         </Col>
-
     )
 }
