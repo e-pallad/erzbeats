@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
+import Tickets from './pages/Tickets';
 import Page404 from './pages/404';
 
 function Layout() {
@@ -31,6 +32,7 @@ export default function App() {
             <Route path='impressum' element={ <Impressum /> } />
             <Route path='datenschutz' element={ <Datenschutz /> } />
             <Route path='contact' element={ <Contact /> } />
+            <Route path='tickets' element={ <Tickets /> } />
             <Route path="*" element={<Page404 />} />
         </Route>
       </Routes>  
