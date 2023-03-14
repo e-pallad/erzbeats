@@ -25,7 +25,7 @@ export default class Anreise extends Component {
                         <h2>Anreise</h2>
                     </div>
                     <Row>
-                        <Col className="anreise-map">
+                        <Col lg={{ span: 6 }} xs={{ span: 12 }} className="anreise-map">
                             {!accepted ? (
                                 <div className='map-disclaimer'>
                                     <p>Mit einem Klick auf den Button akzeptierst du das <a href="https://policies.google.com/technologies/retention?hl=de" target="_blank" rel="noreferrer">Daten</a> an und <a href="https://policies.google.com/technologies/cookies?hl=de" target="_blank" rel="noreferrer">Cookies</a> von Google gesendet und geladen werden.</p>
@@ -34,13 +34,13 @@ export default class Anreise extends Component {
                                 </div>
                             ) : (
                                 <Iframe url="https://www.google.com/maps/d/embed?mid=1nPvFzdbPH-ih4n0rNWR-knrGp7kSthA&ehbc=2E312F"
-                                    width="600px"
-                                    height="450px"
+                                    width="100%"
+                                    height="650px"
                                     className="map"
                                 />
                             )}
                         </Col>
-                        <Col className='anreise-text'>
+                        <Col lg={{ span: 6 }} xs={{ span: 12 }} className='anreise-text'>
                             <p>
 
                             </p>
