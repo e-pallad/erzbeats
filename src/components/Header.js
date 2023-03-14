@@ -44,7 +44,7 @@ export default function Header() {
                         aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
                         placement="start"
                     >
-                        <Offcanvas.Header closeButton>
+                        <Offcanvas.Header closeButton className={`${isMobile ? "bg-grey" : ""}`}>
                             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`} className='site-branding'>
                                 <picture>
                                     <source 
@@ -64,7 +64,7 @@ export default function Header() {
                                 </picture>
                             </Offcanvas.Title>
                         </Offcanvas.Header>
-                        <Offcanvas.Body>
+                        <Offcanvas.Body className={`${isMobile ? "bg-grey" : ""}`}>
                             <Nav className={`${isMobile ? "site-navigation" : "hidden site-navigation"}`} as={'nav'}>
                                 <ul>
                                     <Nav.Item as={'li'}>
@@ -74,7 +74,7 @@ export default function Header() {
                                         <Nav.Link href="/contact">Kontakt</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item as={'li'}>
-                                        {isMobile ? (<Nav.Link href="https://erzbeats.ticket.io" target={"_blank"} rel={"noreferrer"}>Tickets</Nav.Link>) : (<Button href='https://erzbeats.ticket.io' target={"_blank"} rel={"noreferrer"} variant="outline-light">Tickets</Button>)}
+                                        {isMobile ? (<Nav.Link href="/tickets">Tickets</Nav.Link>) : (<Button href='/tickets' variant="outline-light">Tickets</Button>)}
                                     </Nav.Item>
                                 </ul>
                             </Nav>

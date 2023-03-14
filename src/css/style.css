@@ -92,10 +92,19 @@ body {
     font-size: 28px;
 }
 
+.offcanvas-body.bg-grey,
+.offcanvas-header.bg-grey {
+    background:hsla(0, 0%, 0%, 0.6);
+}
+
+.offcanvas-header .btn-close {
+    color: #fff;
+}
+
 .offcanvas-body ul li {
     overflow: hidden;
     list-style: none;
-    color: #03070c;
+    color: #fff;
 }
 
 .offcanvas-body ul li a {
@@ -112,7 +121,7 @@ body {
     overflow: hidden;
     list-style: none;
     transition: all .35s;
-    color: hsl(0, 0%, 100%);
+    color: hsla(0, 0%, 0%, 0.6);
 }
 
 .site-navigation.hidden ul {
@@ -992,11 +1001,11 @@ swiper-button-next:after {
 /*------------------------------------------------------------
 # Page Header
 ------------------------------------------------------------*/
+/*
 .tickets-page .page-header {
-    /*
     background: url("images/tickets-page-header-background.jpg") no-repeat;
-    */
 }
+*/
 
 .tickets-page .tabs {
     margin-top: 80px;
@@ -1244,7 +1253,7 @@ swiper-button-next:after {
 }
 */
 
-.contact-page nav {
+.contact-page nav.header-bar {
     background-color: #232127;
 }
 
@@ -1255,13 +1264,6 @@ swiper-button-next:after {
 
 .contact-page .get-in-touch {
     padding: 250px 100px 100px;
-}
-
-
-@media screen and (min-width: 992px) {
-    .contact-page .get-in-touch {
-        padding: 250px 100px 100px;
-    }
 }
 
 .contact-page .get-in-touch .entry-header {
@@ -1322,6 +1324,22 @@ swiper-button-next:after {
 .contact-page .contact-form textarea::placeholder {
     color: #7f7f7f;
     font-style: italic;
+}
+
+/*------------------------------------------------------------
+# Ticket-page
+------------------------------------------------------------*/
+.ticket-page nav {
+    background-color: #232127;
+}
+
+.ticket-page .main-content {
+    background: #fff;
+    box-shadow: 13px 14px 68px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-page .main-content .iframe-container {
+    padding-top: 220px;
 }
 
 /*------------------------------------------------------------
