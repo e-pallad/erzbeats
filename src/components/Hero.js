@@ -4,7 +4,11 @@ import Col from 'react-bootstrap/Col';
 import Countdown from 'react-countdown';
 
 // Random component
-const Completionist = () => <span>You are good to go!</span>;
+const Completionist = () => (
+    <div className='entry-header'>
+        <h2>Startet jetzt!</h2>
+    </div>
+);
 
 // Renderer callback with condition
 const renderer = ({
@@ -52,7 +56,8 @@ export default function Hero() {
                     <Col>
                         <div className='entry-header'>
                             <h2>Die Party des Sommers '23</h2>
-                            {/*<div className='entry-meta-date'>01.07.2023</div>*/} </div>
+                            {/*<div className='entry-meta-date'>01.07.2023</div>*/}
+                        </div>
                         <Countdown 
                             date='2023-07-01T15:00:00'
                             daysInHours={false}
