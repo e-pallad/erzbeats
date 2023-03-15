@@ -1346,14 +1346,24 @@ swiper-button-next:after {
 # Impressum
 ------------------------------------------------------------*/
 .content-impressum {
-    background-color: #232127;
     padding-top: 165px;
     padding-bottom: 1rem;
+    color: #050505;
 }
 
 .content-impressum a.content-impressum-link {
-    color: hsl(0, 0%, 90%);
+    color: hsl(0, 0%, 0%);
     text-decoration: none!important;
+}
+
+.impressum-page nav.header-bar {
+    background-color: #232127;
+}
+
+.impressum-page .main-content {
+    background: #fff;
+    box-shadow: 13px 14px 68px rgba(0, 0, 0, 0.1);
+    padding: 75px;
 }
 
 /*------------------------------------------------------------
