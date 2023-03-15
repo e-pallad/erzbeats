@@ -1360,14 +1360,24 @@ swiper-button-next:after {
 # Datenschutz
 ------------------------------------------------------------*/
 .content-datenschutz {
-    background-color: #232127;
     padding-top: 165px;
     padding-bottom: 1rem;
+    color: #050505;
 }
 
 .content-datenschutz a.content-datenschutz-link {
-    color: hsl(0, 0%, 90%);
-    /*text-decoration: none!important;*/
+    color: hsl(0, 0%, 0%);
+    text-decoration: none!important;
+}
+
+.datenschutz-page nav.header-bar {
+    background-color: #232127;
+}
+
+.datenschutz-page .main-content {
+    background: #fff;
+    box-shadow: 13px 14px 68px rgba(0, 0, 0, 0.1);
+    padding: 75px;
 }
 
 /*------------------------------------------------------------
