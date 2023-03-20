@@ -16,7 +16,6 @@ export default class Anreise extends Component {
 
     render() {
         const accepted = this.state.mapStatus;
-        console.log(accepted)
         return (
             <Col xs="12">
                 <div id="anreise" className="anreise-headline">
