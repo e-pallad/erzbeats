@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Iframe from 'react-iframe';
-import { Button, Row, Col } from 'react-bootstrap';
+import { Button, Row, Col, Accordion } from 'react-bootstrap';
 
 export default class Anreise extends Component {
     constructor() {
@@ -42,8 +42,44 @@ export default class Anreise extends Component {
                         </Col>
                         <Col lg={{ span: 6 }} xs={{ span: 12 }} className='anreise-text'>
                             <p>
-
+                                Viele Wege führen zum ERZBEATS. Damit alle Besucher ihre Reise jetzt schon planen können, gibt es hier erste Infos. Detaillierte Infos zur Anfahrt folgen in den nächsten Wochen.
                             </p>
+                            <Accordion alwaysOpen>
+                                <Accordion.Item eventKey="0">
+                                    <Accordion.Header><strong>Auto</strong></Accordion.Header>
+                                    <Accordion.Body>
+                                        <p>Je mehr Fahrgemeinschaften, desto besser. Wir werden genug Parkfläche am Gelände zur Verfügung stellen.</p>
+                                        <p>Weitere Informationen und die Route für Google Maps findest du mit einem klick auf "Akzeptieren"</p>
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="1">
+                                    <Accordion.Header><strong>Bus</strong></Accordion.Header>
+                                    <Accordion.Body>
+                                        <p>Folgende Möglichkeiten gibt es für die Anreise mit Bus</p>
+                                        <ul>
+                                            <li>
+                                                <strong>Linie 733</strong><br />Freiberg - Weißenborn - Lichtenberg - Oberbobritzsch - Burkersdorf - Frauenstein
+                                            </li>
+                                            <li>
+                                                <strong>Linie 732</strong><br />Freiberg - Weißenborn - Lichtenberg - Dittersbach - Nassau - Rechenberg-Bienenmühle - Holzhau
+                                            </li>
+                                        </ul>
+                                        <a href="www.vms.de" target={"_blank"}>www.vms.de</a>
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="2">
+                                    <Accordion.Header><strong>Zug</strong></Accordion.Header>
+                                    <Accordion.Body>
+                                        <p>Anreise mit Zug ist ebenfalls möglich mit der Freiberger Eisenbahn. Allerdings habt ihr vom Bahnhof aus einen Gehweg von ca. 35 min.</p>
+                                        <ul>
+                                            <li>
+                                                Freiberg - Berthelsdorf - Lichtenberg -Mulda - Nassau - Clausnitz - Rechenberg-Bühnenmühle - Holzhau
+                                            </li>
+                                        </ul>
+                                        <a href="www.freiberger-eisenbahn.de" target={"_blank"}>www.freiberger-eisenbahn.de</a>
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                            </Accordion>
                         </Col>
                     </Row>
                 </div>

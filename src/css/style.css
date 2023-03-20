@@ -1417,15 +1417,14 @@ swiper-button-next:after {
     padding-top: 80px;
 }
 
-#anreise .anreise-text {
-    background: hsl(0, 0%, 100%);
-}
-
+#anreise .anreise-text,
 .anreise-map .map-disclaimer {
     padding: 40px;
     background: hsl(0, 0%, 100%);
 }
 
+#anreise .anreise-text p,
+#anreise .anreise-text a,
 .anreise-map .map-disclaimer p,
 .anreise-map .map-disclaimer a {
     font-size: 15px;
