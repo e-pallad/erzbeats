@@ -9,6 +9,13 @@ import Button from 'react-bootstrap/Button';
 export default function Header() {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
 
+    const [menuOpen, setMenuOpen] = useState(false)
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen)
+    }
+
+    const handleClose = () => setMenuOpen(false)
+
     useEffect(() => {
         window.addEventListener("resize", () => {
             const ismobile = window.innerWidth < 992;
@@ -38,11 +45,18 @@ export default function Header() {
                             />
                         </picture>
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
+                    <Navbar.Toggle 
+                        aria-controls={`offcanvasNavbar-expand-lg`}
+                        onClick={toggleMenu}
+                    />
                     <Navbar.Offcanvas
                         id={`offcanvasNavbar-expand-lg`}
                         aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
                         placement="start"
+                        restoreFocus={false}
+                        show={menuOpen}
+                        onHide={handleClose}
+                        scroll={true}
                     >
                         <Offcanvas.Header closeButton className={`${isMobile ? "bg-grey" : ""}`}>
                             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`} className='site-branding'>
@@ -72,6 +86,9 @@ export default function Header() {
                                     </Nav.Item>
                                     <Nav.Item as={'li'}>
                                         <Nav.Link href="/contact">Kontakt</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item as={'li'}>
+                                        {isMobile ? (<a href="/#anreise" className='nav-link' onClick={toggleMenu}>Anreise</a>) : (<Nav.Link href="/#anreise">Anreise</Nav.Link>)}
                                     </Nav.Item>
                                     <Nav.Item as={'li'}>
                                         {isMobile ? (<Nav.Link href="/tickets">Tickets</Nav.Link>) : (<Button href='/tickets' variant="outline-light">Tickets</Button>)}
