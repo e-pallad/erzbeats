@@ -6,7 +6,7 @@ import Countdown from 'react-countdown';
 // Random component
 const Completionist = () => (
     <div className='entry-header'>
-        <h2>Startet jetzt!</h2>
+        <h2>DANCE TOGETHER. FOREVER.</h2>
     </div>
 );
 
@@ -59,7 +59,7 @@ export default function Hero() {
                             {/*<div className='entry-meta-date'>01.07.2023</div>*/}
                         </div>
                         <Countdown 
-                            date='2023-07-01T15:00:00'
+                            date='2023-07-01T17:30:00'
                             daysInHours={false}
                             renderer={renderer}
                         />
