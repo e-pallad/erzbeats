@@ -221,7 +221,8 @@ body {
     background-size: cover;
 }
 
-.hero-content .entry-header {
+.hero-content .entry-header,
+.hero-content .entry-header-subline  {
     position: relative;
     text-align: center;
 }
@@ -231,6 +232,17 @@ body {
     margin: 0;
     font-family: mountains;
     font-size: 20vw;
+    background: -webkit-linear-gradient(#ffffff, #cecece);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content .entry-header-subline h2 {
+    padding: 50px;
+    margin: 0;
+    font-family: mountains;
+    font-size: 15vw;
     background: -webkit-linear-gradient(#ffffff, #cecece);
     background-clip: text;
     -webkit-background-clip: text;
@@ -251,6 +263,10 @@ body {
 @media screen and (min-width: 992px) {
     .hero-content .entry-header h2 {
         font-size: 172px;
+    }
+
+    .hero-content .entry-header-subline h2 {
+        font-size: 90px;
     }
 
     .hero-content .entry-header .entry-meta-date {
