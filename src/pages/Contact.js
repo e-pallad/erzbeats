@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Form, Button, Container, Row, Col } from 'react-bootstrap';
+import React, { useState, useEffect, useRef } from 'react';
+import { Form, Button, Container, Row, Col, Toast, ToastContainer } from 'react-bootstrap';
 
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
     useEffect(() => {
@@ -17,6 +18,9 @@ export default function Contact() {
         message: '',
         reason: '',
     });
+
+    const [formSuccess, setFormSuccess] = useState(false)
+    const [formFailed, setFormFailed] = useState(false)
     
     const handleInputChange = (event) => {
         setFormData({
@@ -31,12 +35,20 @@ export default function Contact() {
             subject: event.target.value
         });
     };
+
+    const form = useRef();
     
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        console.log(formData);
-        // Here you would typically send the form data to a server for processing.
-        // For the purposes of this example, we're just logging the data to the console.
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_fr9hjrb', 'template_wdacxdc', form.current, 'po_QV4YJn3Qy2iD1k')
+        .then((result) => {
+            setFormSuccess(true)
+            console.log(result.text);
+        }, (error) => {
+            setFormFailed(true)
+            console.log(error.text);
+        });
     };
 
     return (
@@ -51,7 +63,7 @@ export default function Contact() {
                         <div className='contact-form'>
                             <Row className="mt-5">
                                 <Col xs={12} md={{ span: 8, offset: 2 }}>
-                                    <Form onSubmit={handleSubmit}>
+                                    <Form onSubmit={sendEmail} ref={form}>
                                         <Form.Group controlId="formName" className='form-group'>
                                             <Form.Label>Name</Form.Label>
                                             <Form.Control
@@ -104,6 +116,26 @@ export default function Contact() {
                                     </Form>
                                 </Col>
                             </Row>
+                            {formSuccess && (
+                                <ToastContainer className="p-3" position="bottom-end" style={{ zIndex: 1 }}>
+                                    <Toast delay={3000} autohide bg='success'>
+                                        <Toast.Header closeButton={false}>
+                                            <strong className="me-auto">Erfolgreich!</strong>
+                                        </Toast.Header>
+                                        <Toast.Body>Wir haben deine Nachricht erhalten.</Toast.Body>
+                                    </Toast>
+                                </ToastContainer>
+                            )}
+                            {formFailed && (
+                                <ToastContainer className="p-3" position="bottom-end" style={{ zIndex: 1 }}>
+                                    <Toast delay={3000} autohide bg='danger'>
+                                        <Toast.Header closeButton={false}>
+                                            <strong className="me-auto">Fehlgeschlagen!</strong>
+                                        </Toast.Header>
+                                        <Toast.Body>Irgendetwas lief schief.</Toast.Body>
+                                    </Toast>
+                                </ToastContainer> 
+                            )}
                         </div>
                     </div>
                 </div>
