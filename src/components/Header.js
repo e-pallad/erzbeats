@@ -85,6 +85,9 @@ export default function Header() {
                                         <Nav.Link href="/">Home</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item as={'li'}>
+                                        <Nav.Link href="/bilder">Vergangenheit</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item as={'li'}>
                                         <Nav.Link href="/contact">Kontakt</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item as={'li'}>

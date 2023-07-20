@@ -1,6 +1,6 @@
 {
   "name": "erzbeats",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -14,9 +14,9 @@
     "react-countdown": "^2.3.5",
     "react-dom": "^18.2.0",
     "react-iframe": "^1.8.5",
+    "react-image-gallery": "^1.2.12",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
-    "swiper": "^8.4.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

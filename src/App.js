@@ -11,6 +11,7 @@ import Contact from './pages/Contact';
 import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
 import Tickets from './pages/Tickets';
+import Bilder from './pages/Bilder'
 import Page404 from './pages/404';
 
 function Layout() {
@@ -29,6 +30,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={ <Layout /> }>
             <Route index path='/' element={ <Home /> } />
+            <Route path='bilder' element={ <Bilder /> } />
             <Route path='impressum' element={ <Impressum /> } />
             <Route path='datenschutz' element={ <Datenschutz /> } />
             <Route path='contact' element={ <Contact /> } />
