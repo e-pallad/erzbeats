@@ -15,13 +15,13 @@ export default function Philosophie() {
                                 <figure className="featured-image">
                                     <picture>
                                         <source 
-                                            srcSet={require("../images/philosophie.webp")} 
+                                            srcSet={process.env.PUBLIC_URL + '/img/philosophie.webp'} 
                                             alt="Menschen genießen Musik"
                                             width={360}
                                             height="auto"
                                         />
                                         <img 
-                                            src={require("../images/philosophie.jpg")} 
+                                            src={process.env.PUBLIC_URL + '/img/philosophie.jpg'} 
                                             alt="Menschen genießen Musik" 
                                             width={360}
                                             height="auto"

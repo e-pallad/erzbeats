@@ -14,13 +14,13 @@ export default function Lineup1() {
                             <a href="https://www.instagram.com/blvckcrowz/" target={"_blank"} rel={"noreferrer"} alt="Instagram: Blvck Crows">
                                 <picture>
                                     <source 
-                                        srcSet={require("../images/artists/blvck-crows.webp")} 
+                                        srcSet={process.env.PUBLIC_URL + '/img/artists/blvck-crows.webp'} 
                                         alt="Teaser: Blvck Crows"
                                         width={360}
                                         height="auto"
                                     />
                                     <img 
-                                        src={require("../images/artists/blvck-crows.png")} 
+                                        src={process.env.PUBLIC_URL + '/img/artists/blvck-crows.png'} 
                                         alt="Teaser: Blvck Crows" 
                                         width={360}
                                         height="auto"
@@ -42,13 +42,13 @@ export default function Lineup1() {
                                     <a href="https://soundcloud.com/blvckcrowz" target={"_blank"} rel={"noreferrer"} alt="Blvck Crows Soundcloud Link">
                                         <picture>
                                             <source 
-                                                srcSet={require("../images/box.webp")} 
+                                                srcSet={process.env.PUBLIC_URL + '/img/box.webp'} 
                                                 alt="Blvck Crows Soundcloud Link" 
                                                 width={52} 
                                                 height={52}
                                             />
                                             <img 
-                                                src={require("../images/box.png")} 
+                                                src={process.env.PUBLIC_URL + '/img/box.png'} 
                                                 alt="Blvck Crows Soundcloud Link" 
                                                 width={52} 
                                                 height={52} 
@@ -65,13 +65,13 @@ export default function Lineup1() {
                                 <a href="#somewhere" target={"_blank"} rel={"noreferrer"} alt="Instagram: Darley Jefferson">
                                     <picture>
                                         <source 
-                                            srcSet={require("../images/artists/darley-jefferson.webp")} 
+                                            srcSet={process.env.PUBLIC_URL + '/img/artists/darley-jefferson.webp'} 
                                             alt="Teaser: Darley Jefferson"
                                             width={360}
                                             height="auto"
                                         />
                                         <img 
-                                            src={require("../images/artists/darley-jefferson.png")} 
+                                            src={process.env.PUBLIC_URL + '/img/artists/darley-jefferson.png'} 
                                             alt="Teaser: Darley Jefferson" 
                                             width={360}
                                             height="auto"
@@ -92,13 +92,13 @@ export default function Lineup1() {
                                     <a href="#somewhere" target={"_blank"} rel={"noreferrer"} alt="Darley Jefferson Soundcloud Link">
                                         <picture>
                                             <source 
-                                                srcSet={require("../images/box.webp")} 
+                                                srcSet={process.env.PUBLIC_URL + '/img/box.webp'} 
                                                 alt="Blvck Crows Soundcloud Link" 
                                                 width={52} 
                                                 height={52}
                                             />
                                             <img 
-                                                src={require("../images/box.png")} 
+                                                src={process.env.PUBLIC_URL + '/img/box.png'} 
                                                 alt="Blvck Crows Soundcloud Link" 
                                                 width={52} 
                                                 height={52} 
@@ -112,13 +112,13 @@ export default function Lineup1() {
                             <a href="#somewhere" target={"_blank"} rel={"noreferrer"}>
                                 <picture>
                                     <source 
-                                        srcSet={require("../images/artists/darley-jefferson.webp")} 
+                                        srcSet={process.env.PUBLIC_URL + '/img/artists/darley-jefferson.webp'} 
                                         alt="Teaser: Darley Jefferson"
                                         width={360}
                                         height="auto"
                                     />
                                     <img 
-                                        src={require("../images/artists/darley-jefferson.png")} 
+                                        src={process.env.PUBLIC_URL + '/img/artists/darley-jefferson.png'} 
                                         alt="Teaser: Darley Jefferson" 
                                         width={360}
                                         height="auto"
@@ -132,13 +132,13 @@ export default function Lineup1() {
                             <a href="https://www.instagram.com/oscar_house_/" target={"_blank"} rel={"noreferrer"} alt="Instagram: Oscar House">
                                 <picture>
                                     <source 
-                                        srcSet={require("../images/artists/oscar-house.webp")}
+                                        srcSet={process.env.PUBLIC_URL + '/img/artists/oscar-house.webp'}
                                         alt="Teaser: Oscar House"
                                         width={360}
                                         height="auto"
                                     />
                                     <img 
-                                        src={require("../images/artists/oscar-house.png")} 
+                                        src={process.env.PUBLIC_URL + '/img/artists/oscar-house.png'} 
                                         alt="Teaser: Oscar House" 
                                         width={360}
                                         height="auto"
@@ -162,13 +162,13 @@ export default function Lineup1() {
                                     <a href="https://soundcloud.com/oscar_house" target={"_blank"} rel={"noreferrer"} alt="Oscar House Soundcloud Link">
                                         <picture>
                                             <source 
-                                                srcSet={require("../images/box.webp")} 
+                                                srcSet={process.env.PUBLIC_URL + '/img/box.webp'} 
                                                 alt="Blvck Crows Soundcloud Link" 
                                                 width={52} 
                                                 height={52}
                                             />
                                             <img 
-                                                src={require("../images/box.png")} 
+                                                src={process.env.PUBLIC_URL + '/img/box.png'} 
                                                 alt="Blvck Crows Soundcloud Link" 
                                                 width={52} 
                                                 height={52} 
@@ -185,13 +185,13 @@ export default function Lineup1() {
                                 <a href="#somewhere" target={"_blank"} rel={"noreferrer"} alt="Instagram: Justin Pollnik">
                                     <picture>
                                         <source 
-                                            srcSet={require("../images/artists/justin-pollnik.webp")} 
+                                            srcSet={process.env.PUBLIC_URL + '/img/artists/justin-pollnik.webp'} 
                                             alt="Teaser: Justin Pollnik"
                                             width={360}
                                             height="auto"
                                         />
                                         <img 
-                                            src={require("../images/artists/justin-pollnik.jpg")} 
+                                            src={process.env.PUBLIC_URL + '/img/artists/justin-pollnik.jpg'} 
                                             alt="Teaser: Justin Pollnik" 
                                             width={360}
                                             height="auto"
@@ -216,13 +216,13 @@ export default function Lineup1() {
                                     <a href="#somewhere" target={"_blank"} rel={"noreferrer"} alt="Juston Pollnik Soundcloud Link">
                                         <picture>
                                             <source 
-                                                srcSet={require("../images/box.webp")} 
+                                                srcSet={process.env.PUBLIC_URL + '/img/box.webp'} 
                                                 alt="Blvck Crows Soundcloud Link" 
                                                 width={52} 
                                                 height={52}
                                             />
                                             <img 
-                                                src={require("../images/box.png")} 
+                                                src={process.env.PUBLIC_URL + '/img/box.png'} 
                                                 alt="Blvck Crows Soundcloud Link" 
                                                 width={52} 
                                                 height={52} 
@@ -236,13 +236,13 @@ export default function Lineup1() {
                             <a href="#somewhere" target={"_blank"} rel={"noreferrer"}>
                                 <picture>
                                     <source 
-                                        srcSet={require("../images/artists/justin-pollnik.webp")} 
+                                        srcSet={process.env.PUBLIC_URL + '/img/artists/justin-pollnik.webp'} 
                                         alt="Teaser: Justin Pollnik"
                                         width={360}
                                         height="auto"
                                     />
                                     <img 
-                                        src={require("../images/artists/justin-pollnik.jpg")} 
+                                        src={process.env.PUBLIC_URL + '/img/artists/justin-pollnik.jpg'} 
                                         alt="Teaser: Justin Pollnik" 
                                         width={360}
                                         height="auto"

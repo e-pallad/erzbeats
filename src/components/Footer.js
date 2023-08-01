@@ -36,14 +36,14 @@ export default function Footer() {
                                     <picture>
                                         <source 
                                             alt="Erzbeats Logo"
-                                            srcSet={require("../images/erzbeats.webp")}
+                                            srcSet={process.env.PUBLIC_URL + '/img/erzbeats.webp'}
                                             width={"auto"}
                                             height={135}
                                             className="d-inline-block align-top"
                                         />
                                         <img
                                             alt="Erzbeats Logo"
-                                            src={require("../images/erzbeats.png")}
+                                            src={process.env.PUBLIC_URL + '/img/erzbeats.png'}
                                             width={"auto"}
                                             height={135}
                                             className="d-inline-block align-top"
@@ -74,14 +74,14 @@ export default function Footer() {
                                     <a href="https://www.homag.com/" target={"_blank"} rel={"noreferrer"}>
                                         <picture>
                                             <source 
-                                                srcSet={require("../images/homag.webp")} 
+                                                srcSet={process.env.PUBLIC_URL + '/img/homag.webp'} 
                                                 alt="Homag Group" 
                                                 height={"auto"} 
                                                 width={"150px"} 
                                                 style={{ backgroundColor: "white" }} 
                                             />
                                             <img 
-                                                src={require("../images/homag.png")} 
+                                                src={process.env.PUBLIC_URL + '/img/homag.png'} 
                                                 alt="Homag Group" 
                                                 height={"auto"} 
                                                 width={"150px"} 
@@ -96,13 +96,13 @@ export default function Footer() {
                                     <a href="https://soliq.me" target={"_blank"} rel={"noreferrer"}>
                                         <picture>
                                             <source 
-                                                srcSet={require("../images/soliq.webp")} 
+                                                srcSet={process.env.PUBLIC_URL + '/img/soliq.webp'} 
                                                 alt="SOLIQ Premiumliköre" 
                                                 height={"150px"} 
                                                 width={"150px"} 
                                             />
                                             <img 
-                                                src={require("../images/soliq.png")} 
+                                                src={process.env.PUBLIC_URL + '/img/soliq.png'} 
                                                 alt="SOLIQ Premiumliköre" 
                                                 height={"150px"} 
                                                 width={"150px"} 

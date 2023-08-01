@@ -31,14 +31,14 @@ export default function Header() {
                         <picture>
                             <source 
                                 alt="Erzbeats logo"
-                                srcSet={require("../images/erzbeats.webp")} 
+                                srcSet={process.env.PUBLIC_URL + '/img/erzbeats.webp'} 
                                 width={"auto"}
                                 height={130}
                                 className="d-inline-block align-top"
                             />
                             <img
                                 alt="Erzbeats logo"
-                                src={require("../images/erzbeats.png")}
+                                src={process.env.PUBLIC_URL + '/img/erzbeats.png'}
                                 width={"auto"}
                                 height={130}
                                 className="d-inline-block align-top"
@@ -63,14 +63,14 @@ export default function Header() {
                                 <picture>
                                     <source 
                                         alt="Erzbeats Logo"
-                                        srcSet={require("../images/erzbeats.webp")} 
+                                        srcSet={process.env.PUBLIC_URL + '/img/erzbeats.webp'} 
                                         width={"auto"}
                                         height={120}
                                         className="d-inline-block align-top"
                                     />
                                     <img
                                         alt="Erzbeats Logo"
-                                        src={require("../images/erzbeats.png")}
+                                        src={process.env.PUBLIC_URL + '/img/erzbeats.png'}
                                         width={"auto"}
                                         height={120}
                                         className="d-inline-block align-top"

@@ -217,7 +217,7 @@ body {
 -----------------------------------------------------------*/
 .hero-content {
     padding: 200px 0;
-    background: linear-gradient(0deg, hsla(0, 0%, 5%, 0.7), hsla(0, 0%, 5%, 0.5)),url('../images/cover.jpg') no-repeat;
+    background: linear-gradient(0deg, hsla(0, 0%, 5%, 0.7), hsla(0, 0%, 5%, 0.5)),url('../img/cover.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -791,7 +791,7 @@ body {
 .site-footer {
     position: relative;
     padding: 40px 0 30px;
-    background: url(../images/footer-cover.jpg) no-repeat;
+    background: url(../img/footer-cover.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -1149,11 +1149,11 @@ body {
     box-shadow: 13px 14px 68px rgba(0, 0, 0, 0.1);
 }
 
-.gallery-page .gallery {
+.gallery-page .gallery-twentythree {
     padding: 250px 100px 100px;
 }
 
-.gallery-page .gallery .entry-title p {
+.gallery-page .gallery-twentythree .entry-title p {
     margin: 0;
     padding: 0;
     font-size: 14px;
@@ -1161,7 +1161,7 @@ body {
     color: hsl(0, 0%, 48%);
 }
 
-.gallery-page .gallery .entry-title h2 {
+.gallery-page .gallery-twentythree .entry-title h2 {
     width: 100%;
     margin: 0;
     font-size: 48px;
@@ -1169,11 +1169,11 @@ body {
     color: hsl(0, 0%, 0%);
 }
 
-.gallery-page .gallery .entry-content {
+.gallery-page .gallery-twentythree .entry-content {
     margin-top: 45px;
 }
 
-.gallery-page .gallery .entry-content p {
+.gallery-page .gallery-twentythree .entry-content p {
     font-size: 15px;
     color: #989898;
     line-height: 2;
