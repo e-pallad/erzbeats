@@ -1,0 +1,146 @@
+const ImagesTwentyThree = [
+    {
+        original: '/img/gallery/2023/_DSC4644.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4644.png',
+        srcSet: '/img/gallery/2023/_DSC4644.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4645.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4645.png',
+        srcSet: '/img/gallery/2023/_DSC4645.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4648.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4648.png',
+        srcSet: '/img/gallery/2023/_DSC4648.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4652.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4652.png',
+        srcSet: '/img/gallery/2023/_DSC4652.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4660.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4660.png',
+        srcSet: '/img/gallery/2023/_DSC4660.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4663.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4663.png',
+        srcSet: '/img/gallery/2023/_DSC4663.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4664.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4664.png',
+        srcSet: '/img/gallery/2023/_DSC4664.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4665.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4665.png',
+        srcSet: '/img/gallery/2023/_DSC4665.webp',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4670.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4670.png',
+        srcSet: '/img/gallery/2023/_DSC4670.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4671.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4671.png',
+        srcSet: '/img/gallery/2023/_DSC4671.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4674.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4674.png',
+        srcSet: '/img/gallery/2023/_DSC4674.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4678.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4678.png',
+        srcSet: '/img/gallery/2023/_DSC4678.webp',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4679.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4679.png',
+        srcSet: '/img/gallery/2023/_DSC4679.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4692.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4692.png',
+        srcSet: '/img/gallery/2023/_DSC4692.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4693.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4693.png',
+        srcSet: '/img/gallery/2023/_DSC4693.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4694.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4694.png',
+        srcSet: '/img/gallery/2023/_DSC4694.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4695.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4695.png',
+        srcSet: '/img/gallery/2023/_DSC4695.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4700.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4700.png',
+        srcSet: '/img/gallery/2023/_DSC4700.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4701.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4701.png',
+        srcSet: '/img/gallery/2023/_DSC4701.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4712.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4712.png',
+        srcSet: '/img/gallery/2023/_DSC4712.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4713.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4713.png',
+        srcSet: '/img/gallery/2023/_DSC4713.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4714.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4714.png',
+        srcSet: '/img/gallery/2023/_DSC4714.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4736.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4736.png',
+        srcSet: '/img/gallery/2023/_DSC4736.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+    {
+        original: '/img/gallery/2023/_DSC4748.png',
+        thumbnail: '/img/gallery/2023/thumbs/thumb-_DSC4748.png',
+        srcSet: '/img/gallery/2023/_DSC4748.webp',
+        originalAlt: 'Danke und bis nächstes Jahr',
+    },
+];
+
+export default ImagesTwentyThree;
