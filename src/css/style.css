@@ -1149,11 +1149,11 @@ body {
     box-shadow: 13px 14px 68px rgba(0, 0, 0, 0.1);
 }
 
-.gallery-page .gallery-twentythree {
+.gallery-page [class^="gallery_"] {
     padding: 250px 100px 100px;
 }
 
-.gallery-page .gallery-twentythree .entry-title p {
+.gallery-page [class^="gallery_"] .entry-title p {
     margin: 0;
     padding: 0;
     font-size: 14px;
@@ -1161,7 +1161,7 @@ body {
     color: hsl(0, 0%, 48%);
 }
 
-.gallery-page .gallery-twentythree .entry-title h2 {
+.gallery-page [class^="gallery_"] .entry-title h2 {
     width: 100%;
     margin: 0;
     font-size: 48px;
@@ -1169,11 +1169,11 @@ body {
     color: hsl(0, 0%, 0%);
 }
 
-.gallery-page .gallery-twentythree .entry-content {
+.gallery-page [class^="gallery_"] .entry-content {
     margin-top: 45px;
 }
 
-.gallery-page .gallery-twentythree .entry-content p {
+.gallery-page [class^="gallery_"] .entry-content p {
     font-size: 15px;
     color: #989898;
     line-height: 2;

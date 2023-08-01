@@ -6,6 +6,10 @@ import Row from "react-bootstrap/Row";
 import ImageGallery from 'react-image-gallery';
 import '../css/image-gallery.css';
 
+const images = require.context('../../public/img/gallery', true);
+// let gallery = images(`./${year}/${source}.png`);
+// let thumbs = images(`./${year}/thumbs/${source}.png`);
+
 const imagesTwentyThree = [
     {
         original: 'https://picsum.photos/id/1018/1000/600/',
@@ -28,17 +32,18 @@ export default function Home() {
             document.body.classList.remove('gallery-page')
         }
     }, [])
+    console.log(images)
     return (
         <Container>
             <div className='main-content'>
-                <div className="gallery">
+                <div className="gallery_2023">
                     <div className='entry-header'>
                         <div className="entry-title">
                             <p>ERZbeats 2023</p>
                             <h2>Bilder</h2>
                         </div>
                     </div>
-                    <div className='gallery-twentythree'>
+                    <div className='gallery'>
                         <Row className="mt-5">
                             <ImageGallery items={imagesTwentyThree} />
                         </Row>
