@@ -7,7 +7,7 @@ export default function Philosophie() {
                 <Col xs="12">
                     <div className="philosophie-headline">
                         <div className="entry-title">
-                            <p>ERZbeats 2023</p>
+                            <p>ERZbeats {process.env.REACT_APP_YEAR}</p>
                             <h2>Unsere Philosophie</h2>
                         </div>
                         <div className="philosophie">

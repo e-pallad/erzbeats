@@ -20,7 +20,7 @@ export default class Anreise extends Component {
             <Col xs="12">
                 <div id="anreise" className="anreise-headline">
                     <div className="entry-title">
-                        <p>ERZbeats 2023</p>
+                        <p>ERZbeats {process.env.REACT_APP_YEAR}</p>
                         <h2>Anreise</h2>
                     </div>
                     <Row>
