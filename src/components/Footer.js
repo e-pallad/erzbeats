@@ -2,6 +2,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+import LogoPng from './../img/erzbeats.png';
+import LogoWebp from './../img/erzbeats.webp';
+
 export default function Footer() {
     return (
         <footer className="site-footer">
@@ -36,14 +39,14 @@ export default function Footer() {
                                     <picture>
                                         <source 
                                             alt="Erzbeats Logo"
-                                            srcSet={process.env.PUBLIC_URL + '/img/erzbeats.webp'}
+                                            srcSet={LogoWebp}
                                             width={"auto"}
                                             height={135}
                                             className="d-inline-block align-top"
                                         />
                                         <img
                                             alt="Erzbeats Logo"
-                                            src={process.env.PUBLIC_URL + '/img/erzbeats.png'}
+                                            src={LogoPng}
                                             width={"auto"}
                                             height={135}
                                             className="d-inline-block align-top"
