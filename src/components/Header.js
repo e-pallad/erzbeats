@@ -6,6 +6,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Button from 'react-bootstrap/Button';
 
+import LogoPng from './../img/erzbeats.png';
+import LogoWebp from './../img/erzbeats.webp';
+
 export default function Header() {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
 
@@ -31,14 +34,14 @@ export default function Header() {
                         <picture>
                             <source 
                                 alt="Erzbeats logo"
-                                srcSet={process.env.PUBLIC_URL + '/img/erzbeats.webp'} 
+                                srcSet={LogoWebp} 
                                 width={"auto"}
                                 height={130}
                                 className="d-inline-block align-top"
                             />
                             <img
                                 alt="Erzbeats logo"
-                                src={process.env.PUBLIC_URL + '/img/erzbeats.png'}
+                                src={LogoPng}
                                 width={"auto"}
                                 height={130}
                                 className="d-inline-block align-top"
@@ -63,14 +66,14 @@ export default function Header() {
                                 <picture>
                                     <source 
                                         alt="Erzbeats Logo"
-                                        srcSet={process.env.PUBLIC_URL + '/img/erzbeats.webp'} 
+                                        srcSet={LogoWebp} 
                                         width={"auto"}
                                         height={120}
                                         className="d-inline-block align-top"
                                     />
                                     <img
                                         alt="Erzbeats Logo"
-                                        src={process.env.PUBLIC_URL + '/img/erzbeats.png'}
+                                        src={LogoPng}
                                         width={"auto"}
                                         height={120}
                                         className="d-inline-block align-top"
