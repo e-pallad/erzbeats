@@ -1,11 +1,14 @@
 import Col from "react-bootstrap/Col";
 
+import SoundCloudImg from './../img/box.png';
+import SoundCloudWebp from './../img/box.webp';
+
 export default function Lineup1() {
     return (
         <Col xs="12">
             <div id="lineup" className="lineup-artists-headline">
                 <div className="entry-title">
-                    <p>ERZbeats 2023</p>
+                    <p>ERZbeats {process.env.REACT_APP_YEAR}</p>
                     <h2>Lineup</h2>
                 </div>
                 <div className="lineup-artists">
@@ -42,13 +45,13 @@ export default function Lineup1() {
                                     <a href="https://soundcloud.com/blvckcrowz" target={"_blank"} rel={"noreferrer"} alt="Blvck Crows Soundcloud Link">
                                         <picture>
                                             <source 
-                                                srcSet={process.env.PUBLIC_URL + '/img/box.webp'} 
+                                                srcSet={SoundCloudWebp} 
                                                 alt="Blvck Crows Soundcloud Link" 
                                                 width={52} 
                                                 height={52}
                                             />
                                             <img 
-                                                src={process.env.PUBLIC_URL + '/img/box.png'} 
+                                                src={SoundCloudImg} 
                                                 alt="Blvck Crows Soundcloud Link" 
                                                 width={52} 
                                                 height={52} 
@@ -92,13 +95,13 @@ export default function Lineup1() {
                                     <a href="#somewhere" target={"_blank"} rel={"noreferrer"} alt="Darley Jefferson Soundcloud Link">
                                         <picture>
                                             <source 
-                                                srcSet={process.env.PUBLIC_URL + '/img/box.webp'} 
+                                                srcSet={SoundCloudWebp} 
                                                 alt="Blvck Crows Soundcloud Link" 
                                                 width={52} 
                                                 height={52}
                                             />
                                             <img 
-                                                src={process.env.PUBLIC_URL + '/img/box.png'} 
+                                                src={SoundCloudImg} 
                                                 alt="Blvck Crows Soundcloud Link" 
                                                 width={52} 
                                                 height={52} 
@@ -162,13 +165,13 @@ export default function Lineup1() {
                                     <a href="https://soundcloud.com/oscar_house" target={"_blank"} rel={"noreferrer"} alt="Oscar House Soundcloud Link">
                                         <picture>
                                             <source 
-                                                srcSet={process.env.PUBLIC_URL + '/img/box.webp'} 
+                                                srcSet={SoundCloudWebp} 
                                                 alt="Blvck Crows Soundcloud Link" 
                                                 width={52} 
                                                 height={52}
                                             />
                                             <img 
-                                                src={process.env.PUBLIC_URL + '/img/box.png'} 
+                                                src={SoundCloudImg} 
                                                 alt="Blvck Crows Soundcloud Link" 
                                                 width={52} 
                                                 height={52} 
@@ -216,13 +219,13 @@ export default function Lineup1() {
                                     <a href="#somewhere" target={"_blank"} rel={"noreferrer"} alt="Juston Pollnik Soundcloud Link">
                                         <picture>
                                             <source 
-                                                srcSet={process.env.PUBLIC_URL + '/img/box.webp'} 
+                                                srcSet={SoundCloudWebp} 
                                                 alt="Blvck Crows Soundcloud Link" 
                                                 width={52} 
                                                 height={52}
                                             />
                                             <img 
-                                                src={process.env.PUBLIC_URL + '/img/box.png'} 
+                                                src={SoundCloudImg} 
                                                 alt="Blvck Crows Soundcloud Link" 
                                                 width={52} 
                                                 height={52} 
