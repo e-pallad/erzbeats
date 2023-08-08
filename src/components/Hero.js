@@ -3,6 +3,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Countdown from 'react-countdown';
 
+import HeroVidMp4 from '../vid/ErzbeatsAftermovie_720p.mp4'
+import HeroVidWebm from '../vid/ErzbeatsAftermovie_WEBM.webm'
+
 // Random component
 const Completionist = () => (
     <div className='entry-header-subline'>
@@ -54,6 +57,16 @@ export default function Hero() {
             <Container>
                 <Row>
                     <Col>
+                        <video id='header-video' autoPlay loop muted>
+                            <source 
+                                src={HeroVidWebm} 
+                                type='video/webm' 
+                            />
+                            <source
+                                src={HeroVidMp4}
+                                type='video/mp4'
+                            />
+                        </video>
                         <div className='entry-header'>
                             <h2>Die Party des Sommers '24</h2>
                         </div>
