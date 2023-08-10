@@ -3,8 +3,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Countdown from 'react-countdown';
 
-import HeroVidMp4 from '../vid/ErzbeatsAftermovie_720p.mp4'
-import HeroVidWebm from '../vid/ErzbeatsAftermovie_WEBM.webm'
+import HeroVidMp4 from '../vid/ErzbeatsAftermovie_720p.mp4';
+import HeroVidWebm from '../vid/ErzbeatsAftermovie_WEBM.webm';
+import HeroPoster from '../img/erzbeats-poster.gif'
 
 // Random component
 const Completionist = () => (
@@ -57,7 +58,7 @@ export default function Hero() {
             <Container>
                 <Row>
                     <Col>
-                        <video id='header-video' autoPlay loop muted>
+                        <video id='header-video' poster={HeroPoster} autoPlay loop muted>
                             <source 
                                 src={HeroVidWebm} 
                                 type='video/webm' 
