@@ -38,7 +38,7 @@ export default function Lineup2() {
                                 </div>
                                 <div className="entry-content">
                                     <p>
-                                        Wir halten euch auf den laufenden bis wir genaueres Wissen.
+                                        Wir halten euch auf unseren Social Media Kanälen auf dem laufenden. Folgt uns einfach auf <a href="https://www.instagram.com/erzbeats/" target="_blank" alt="Instagram Link" rel="noreferrer">Instagram</a>.
                                     </p>
                                 </div>
                             </div>
