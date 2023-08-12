@@ -11,17 +11,28 @@ import Contact from './pages/Contact';
 import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
 import Tickets from './pages/Tickets';
+import Teaser from './pages/Teaser';
 import Bilder from './pages/Bilder'
 import Page404 from './pages/404';
 
+var teaser = true;
+
 function Layout() {
-  return (
-    <>
-    <Header />
-    <Outlet />
-    <Footer />
-    </>
-  );
+  if (teaser) {
+    return (
+      <>
+      <Outlet />
+      </>
+    );
+  } else {
+    return (
+      <>
+      <Header />
+      <Outlet />
+      <Footer />
+      </>
+    );
+  }
 }
 
 export default function App() {
@@ -35,6 +46,7 @@ export default function App() {
             <Route path='datenschutz' element={ <Datenschutz /> } />
             <Route path='contact' element={ <Contact /> } />
             <Route path='tickets' element={ <Tickets /> } />
+            <Route path='teaser' element={ <Teaser /> } />
             <Route path="*" element={<Page404 />} />
         </Route>
       </Routes>  

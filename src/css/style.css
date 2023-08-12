@@ -308,6 +308,52 @@ body {
 }
 
 /*------------------------------------------------------------
+## teaser
+------------------------------------------------------------*/
+.teaser-content #teaser-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.teaser-content .teaser-headline,
+.teaser-content .teaser-headline-subline  {
+    position: relative;
+    text-align: center;
+}
+
+.teaser-content .teaser-headline h2,
+.teaser-content .teaser-headline-subline h2  {
+    margin: 0;
+    font-family: mountains;
+}
+
+.teaser-content .teaser-headline h2 {
+    padding: 25px 25px 10px 25px;
+}
+
+.teaser-content .teaser-headline-subline h2 {
+    padding: 0px 25px 70px 25px;
+}
+
+.teaser-content .teaser-bottom-links {
+    border-top: #fff 1px solid;
+    position: relative;
+    text-align: center;
+}
+
+.teaser-content .teaser-bottom-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*------------------------------------------------------------
 ## countdown
 ------------------------------------------------------------*/
 .countdown {
