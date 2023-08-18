@@ -8,13 +8,13 @@ import HeroPoster from '../img/erzbeats-poster.gif';
 
 export default function Teaser() {
     return (
-        <div className="content-section">
+        <div className="teaser-content-section">
             <Container className='teaser-content'>
-                <Row>
-                    <Col>
-                        <Button>Links</Button>
+                <Row className='teaser-main-content align-items-center'>
+                    <Col className='text-center' lg={4} >
+                        <Button variant="outline-light">Links</Button>
                     </Col>
-                    <Col>
+                    <Col lg={4}>
                         <video id='teaser-video' poster={HeroPoster} autoPlay loop muted>
                             <source 
                                 src={TeaserVideo} 
@@ -22,8 +22,8 @@ export default function Teaser() {
                             />
                         </video>
                     </Col>
-                    <Col>
-                        <Button>Rechts</Button>
+                    <Col className='text-center' lg={4}>
+                        <Button variant="outline-light">Rechts</Button>
                     </Col>
                 </Row>
                 {/* Teaser Text + Link */}

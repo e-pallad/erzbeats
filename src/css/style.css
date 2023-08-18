@@ -310,6 +310,15 @@ body {
 /*------------------------------------------------------------
 ## teaser
 ------------------------------------------------------------*/
+.teaser-content-section {
+    height: 100vh;
+}
+
+.teaser-content,
+.teaser-content .teaser-main-content {
+    height: 100%;
+}
+
 .teaser-content #teaser-video {
     width: 100vw;
     height: 100vh;
