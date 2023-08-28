@@ -5,22 +5,14 @@ import Row from "react-bootstrap/Row";
 import Philosophie from '../components/Philosphie';
 import Lineup1 from '../components/Lineup1';
 import HeroCountdown from '../components/HeroCountdown';
-import HeroNoLineup from '../components/HeroNoCountdown';
 import Anreise from '../components/Anreise';
 
 import LineupTba from '../components/LineupTba';
 
 export default function Home() {
-    var hero, lineup;
+    var lineup;
 
     var noLineup = false;
-    var noHero = true;
-
-    if (noHero) {
-        hero = <HeroNoLineup />
-    } else {
-        hero = <HeroCountdown />
-    }
 
     if (noLineup) {
         lineup = <Lineup1 />
@@ -30,7 +22,7 @@ export default function Home() {
 
     return (
         <div className="content-section">
-            {hero}
+            <HeroCountdown />
             <Container>
                 <Row>
                     <Philosophie />
