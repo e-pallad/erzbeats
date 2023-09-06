@@ -4,6 +4,7 @@ import './css/style.css';
 import { Route, Routes, Outlet } from 'react-router-dom';
 
 import Header from './components/Header';
+import HeaderTeaser from './components/HeaderTeaser';
 import Footer from './components/Footer';
 
 import Home from './pages/Home';
@@ -20,7 +21,10 @@ var teaser = true;
 function Layout() {
   if (teaser) {
     return (
-      <Teaser />
+      <>
+      <HeaderTeaser />
+      <Outlet />
+      </>
     );
   } else {
     return (
@@ -34,19 +38,36 @@ function Layout() {
 }
 
 export default function App() {
-  return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={ <Layout /> }>
-            <Route index path='/' element={ <Home /> } />
-            <Route path='bilder' element={ <Bilder /> } />
-            <Route path='impressum' element={ <Impressum /> } />
-            <Route path='datenschutz' element={ <Datenschutz /> } />
-            <Route path='contact' element={ <Contact /> } />
-            <Route path='tickets' element={ <Tickets /> } />
-            <Route path="*" element={<Page404 />} />
-        </Route>
-      </Routes>  
-    </div>
-  );
+  if (teaser) {
+    return (
+      <div className="App">
+        <Routes>
+          <Route path="/" element={ <Layout /> }>
+              <Route index path='/' element={ <Teaser /> } />
+              <Route path='bilder' element={ <Bilder /> } />
+              <Route path='impressum' element={ <Impressum /> } />
+              <Route path='datenschutz' element={ <Datenschutz /> } />
+              <Route path='contact' element={ <Contact /> } />
+              <Route path="*" element={<Page404 />} />
+          </Route>
+        </Routes>  
+      </div>
+    );
+  } else {
+    return (
+      <div className="App">
+        <Routes>
+          <Route path="/" element={ <Layout /> }>
+              <Route index path='/' element={ <Home /> } />
+              <Route path='bilder' element={ <Bilder /> } />
+              <Route path='impressum' element={ <Impressum /> } />
+              <Route path='datenschutz' element={ <Datenschutz /> } />
+              <Route path='contact' element={ <Contact /> } />
+              <Route path='tickets' element={ <Tickets /> } />
+              <Route path="*" element={<Page404 />} />
+          </Route>
+        </Routes>  
+      </div>
+    );
+  }
 }

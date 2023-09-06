@@ -323,10 +323,6 @@ body {
     padding: 0px 25px 70px 25px;
 }
 
-.teaser-content .teaser-footer-links {
-    border-top: #fff 1px solid;
-}
-
 .teaser-content .teaser-bottom-links {
     position: relative;
     text-align: center;
@@ -335,6 +331,10 @@ body {
 .teaser-content .teaser-bottom-links a {
     text-decoration: none;
     color: #fff;
+}
+
+.teaser-content .teaser-copyright {
+    font-size: 12px;
 }
 
 /*------------------------------------------------------------
