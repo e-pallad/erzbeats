@@ -20,9 +20,7 @@ var teaser = true;
 function Layout() {
   if (teaser) {
     return (
-      <>
-      <Outlet />
-      </>
+      <Teaser />
     );
   } else {
     return (
@@ -46,7 +44,6 @@ export default function App() {
             <Route path='datenschutz' element={ <Datenschutz /> } />
             <Route path='contact' element={ <Contact /> } />
             <Route path='tickets' element={ <Tickets /> } />
-            <Route path='teaser' element={ <Teaser /> } />
             <Route path="*" element={<Page404 />} />
         </Route>
       </Routes>  
