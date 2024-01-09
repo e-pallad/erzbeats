@@ -8,7 +8,7 @@ import HeaderTeaser from './components/HeaderTeaser';
 import Footer from './components/Footer';
 
 import Home from './pages/Home';
-import Contact from './pages/Contact';
+import Kontakt from './pages/Kontakt';
 import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
 import Tickets from './pages/Tickets';
@@ -16,7 +16,7 @@ import Teaser from './pages/Teaser';
 import Bilder from './pages/Bilder'
 import Page404 from './pages/404';
 
-var teaser = true;
+var teaser = false;
 
 function Layout() {
   if (teaser) {
@@ -47,7 +47,7 @@ export default function App() {
               <Route path='bilder' element={ <Bilder /> } />
               <Route path='impressum' element={ <Impressum /> } />
               <Route path='datenschutz' element={ <Datenschutz /> } />
-              <Route path='contact' element={ <Contact /> } />
+              <Route path='kontakt' element={ <Kontakt /> } />
               <Route path="*" element={<Page404 />} />
           </Route>
         </Routes>  
@@ -62,7 +62,7 @@ export default function App() {
               <Route path='bilder' element={ <Bilder /> } />
               <Route path='impressum' element={ <Impressum /> } />
               <Route path='datenschutz' element={ <Datenschutz /> } />
-              <Route path='contact' element={ <Contact /> } />
+              <Route path='kontakt' element={ <Kontakt /> } />
               <Route path='tickets' element={ <Tickets /> } />
               <Route path="*" element={<Page404 />} />
           </Route>

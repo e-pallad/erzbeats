@@ -3,7 +3,7 @@ import { Form, Button, Container, Row, Col, Toast, ToastContainer } from 'react-
 
 import emailjs from '@emailjs/browser';
 
-export default function Contact() {
+export default function Kontakt() {
     useEffect(() => {
         document.body.classList.add('contact-page')
         return () => {
