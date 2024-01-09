@@ -16,7 +16,7 @@ export default function Footer() {
                     <Row>
                         <Col xl={{ span: 4 }} md={{ span: 4, order: 1 }} xs={{ span: 12, order: 1 }} className="footer-col social-links">
                             <h5>Folge uns auf</h5>
-                            <Row className="justify-content-center">
+                            <Row className="mt-5 justify-content-center">
                                 <Col xs={{ span: 2 }}>
                                     <a href="https://www.facebook.com/people/Erzbeats-Lichtenberg/100090111153011/" alt="Link zur Facebook Seite von Erzebeats" target="_blank" rel="noreferrer">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-facebook" viewBox="0 0 16 16">
@@ -71,8 +71,8 @@ export default function Footer() {
                             </div>
                         </Col>
                         <Col xl={{ span: 4 }} md={{ span: 4, order: 3 }} xs={{ span: 12, order: 2 }} className="footer-col">
-                        <h5>Unsere Partner</h5>
-                            <Row className="justify-content-around">
+                        <h5>Unser Partner</h5>
+                            <Row className="mt-5 justify-content-around">
                                 <Col md={{ span: 12 }}>
                                     <a href="https://www.homag.com/" target={"_blank"} rel={"noreferrer"}>
                                         <picture>
@@ -89,26 +89,6 @@ export default function Footer() {
                                                 height={"auto"} 
                                                 width={"150px"} 
                                                 style={{ backgroundColor: "white" }} 
-                                            />
-                                        </picture>
-                                    </a>
-                                </Col>
-                            </Row>
-                            <Row className="mt-3">
-                                <Col md={{ span: 12 }}>
-                                    <a href="https://soliq.me" target={"_blank"} rel={"noreferrer"}>
-                                        <picture>
-                                            <source 
-                                                srcSet={process.env.PUBLIC_URL + '/img/soliq.webp'} 
-                                                alt="SOLIQ Premiumliköre" 
-                                                height={"150px"} 
-                                                width={"150px"} 
-                                            />
-                                            <img 
-                                                src={process.env.PUBLIC_URL + '/img/soliq.png'} 
-                                                alt="SOLIQ Premiumliköre" 
-                                                height={"150px"} 
-                                                width={"150px"} 
                                             />
                                         </picture>
                                     </a>

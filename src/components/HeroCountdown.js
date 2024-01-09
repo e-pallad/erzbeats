@@ -24,23 +24,19 @@ const renderer = ({
         return (
             <div className="countdown flex flex-wrap justify-content-between text-center">
                 <div className="countdown-holder">
-                    <div className="dday">
-                        {days}</div>
+                    <div className="dday">{days}</div>
                     <label>Tage</label>
                 </div>
                 <div className="countdown-holder">
-                    <div className="dhour">
-                        {hours}</div>
+                    <div className="dhour">{hours}</div>
                     <label>Stunden</label>
                 </div>
                 <div className="countdown-holder">
-                    <div className="dmin">
-                        {minutes}</div>
+                    <div className="dmin">{minutes}</div>
                     <label>Minuten</label>
                 </div>
                 <div className="countdown-holder">
-                    <div className="dsec">
-                        {seconds}</div>
+                    <div className="dsec">{seconds}</div>
                     <label>Sekunden</label>
                 </div>
             </div>
