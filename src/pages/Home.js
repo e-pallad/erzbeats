@@ -3,7 +3,7 @@ import React from 'react';
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Philosophie from '../components/Philosphie';
-import Lineup1 from '../components/Lineup1';
+import Lineup from '../components/Lineup';
 import HeroCountdown from '../components/HeroCountdown';
 import Anreise from '../components/Anreise';
 
@@ -17,7 +17,7 @@ export default function Home() {
     if (noLineup) {
         lineup = <LineupTba />
     } else {
-        lineup = <Lineup1 />
+        lineup = <Lineup />
     }
 
     return (

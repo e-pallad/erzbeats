@@ -3,7 +3,7 @@ import Col from "react-bootstrap/Col";
 import SoundCloudImg from './../img/box.png';
 import SoundCloudWebp from './../img/box.webp';
 
-export default function Lineup1() {
+export default function Lineup() {
     return (
         <Col xs="12">
             <div id="lineup" className="lineup-artists-headline">
