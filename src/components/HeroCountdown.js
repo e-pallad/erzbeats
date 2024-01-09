@@ -54,7 +54,7 @@ export default function HeroCountdown() {
                             <h2>Die Party des Sommers '24</h2>
                         </div>
                         <Countdown 
-                            date='2024-06-22T16:30:00'
+                            date='2024-06-22T16:00:00'
                             daysInHours={false}
                             renderer={renderer}
                         />
