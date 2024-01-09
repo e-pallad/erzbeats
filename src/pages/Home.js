@@ -12,12 +12,12 @@ import LineupTba from '../components/LineupTba';
 export default function Home() {
     var lineup;
 
-    var noLineup = false;
+    var noLineup = true;
 
     if (noLineup) {
-        lineup = <Lineup1 />
-    } else {
         lineup = <LineupTba />
+    } else {
+        lineup = <Lineup1 />
     }
 
     return (
