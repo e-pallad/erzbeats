@@ -217,7 +217,7 @@ body {
 -----------------------------------------------------------*/
 .hero-content {
     padding: 200px 0;
-    background: linear-gradient(0deg, hsla(0, 0%, 5%, 0.7), hsla(0, 0%, 5%, 0.5)),url('../img/cover.jpg') no-repeat;
+    background: linear-gradient(0deg, hsla(0, 0%, 5%, 0.7), hsla(0, 0%, 5%, 0.5)),url('../img/cover.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -591,17 +591,23 @@ body {
         width: calc(100% + 75px);
     }
 
-    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.blvck-crowz,
-    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.justin-pollnik {
-        top: 50px;
+    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.acina,
+    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.justin-prince {
+        top: 15px;
     }
 
-    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.darley-jefferson {
+    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.darley-jefferson,
+    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.die-genossen-fett {
         top: 30px;
     }
 
-    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.oscar-house {
-        top: 70px;
+    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.oscar-house,
+    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.tommyrich {
+        top: 45px;
+    }
+
+    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.blvck-crowz {
+        top: 50px;
     }
 
     .lineup-artists .lineup-artists-wrap .lineup-artists-description-container {
