@@ -10,7 +10,24 @@ export default function Lineup() {
             return (
                 <div className="lineup-artists-wrap flex flex-wrap">
                     <figure className="featured-image">
-                        <a href={data.instagram} target={"_blank"} rel={"noreferrer"} alt={"Instagram Link: " + data.name}>
+                        {( data.instagram ? (
+                            <a href={data.instagram} target={"_blank"} rel={"noreferrer"} alt={"Instagram Link: " + data.name}>
+                                <picture>
+                                    <source 
+                                        srcSet={process.env.PUBLIC_URL + data.images.webp} 
+                                        alt={"Teaser: " + data.name}
+                                        width={360}
+                                        height="auto"
+                                    />
+                                    <img 
+                                        src={process.env.PUBLIC_URL + data.images.png} 
+                                        alt={"Teaser: " + data.name} 
+                                        width={360}
+                                        height="auto"
+                                    />
+                                </picture>
+                            </a>
+                        ) : (
                             <picture>
                                 <source 
                                     srcSet={process.env.PUBLIC_URL + data.images.webp} 
@@ -25,7 +42,7 @@ export default function Lineup() {
                                     height="auto"
                                 />
                             </picture>
-                        </a>
+                        ) )}
                     </figure>
                     <div className="lineup-artists-description">
                         <div className={"lineup-artists-description-container " + data.name.replace(/\s/g, "-").toLowerCase()}>
@@ -85,7 +102,24 @@ export default function Lineup() {
                         </div>
                     </div>
                     <figure className="featured-image">
-                        <a href={data.instagram} target={"_blank"} rel={"noreferrer"} alt={"Instagram Link: " + data.name}>
+                        {( data.instagram ? (
+                            <a href={data.instagram} target={"_blank"} rel={"noreferrer"} alt={"Instagram Link: " + data.name}>
+                                <picture>
+                                    <source 
+                                        srcSet={process.env.PUBLIC_URL + data.images.webp} 
+                                        alt={"Teaser: " + data.name}
+                                        width={360}
+                                        height="auto"
+                                    />
+                                    <img 
+                                        src={process.env.PUBLIC_URL + data.images.png} 
+                                        alt={"Teaser: " + data.name} 
+                                        width={360}
+                                        height="auto"
+                                    />
+                                </picture>
+                            </a>
+                        ) : (
                             <picture>
                                 <source 
                                     srcSet={process.env.PUBLIC_URL + data.images.webp} 
@@ -100,7 +134,7 @@ export default function Lineup() {
                                     height="auto"
                                 />
                             </picture>
-                        </a>
+                        ) )}
                     </figure>
                 </div>
             )
