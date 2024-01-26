@@ -91,7 +91,7 @@ export default function Header() {
                                         <Nav.Link href="/bilder">Bilder</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item as={'li'}>
-                                        <Nav.Link href="/contact">Kontakt</Nav.Link>
+                                        <Nav.Link href="/kontakt">Kontakt</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item as={'li'}>
                                         {isMobile ? (<a href="/#anreise" className='nav-link' onClick={toggleMenu}>Anreise</a>) : (<Nav.Link href="/#anreise">Anreise</Nav.Link>)}
