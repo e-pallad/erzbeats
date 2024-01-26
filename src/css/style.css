@@ -156,10 +156,10 @@ body {
     font-size: 18px;
 }
 
-.site-navigation.hidden ul li button:hover {
+.site-navigation.hidden ul li .btn:hover {
     color: #03070c;
-    background-color: var(--bs-btn-hover-bg);
-    border-color: var(--bs-btn-hover-border-color);
+    background-color: #f47b0a;
+    border-color: #f47b0a;
 }
 
 .site-navigation.hidden ul li a {
@@ -386,7 +386,7 @@ body {
 
 .hero-content .entry-footer a:hover, 
 .hero-content .entry-footer .current {
-    background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+    background: -webkit-linear-gradient(#f47b0a, #ff5825);
     color: hsl(0, 0%, 0%);
 }
 
