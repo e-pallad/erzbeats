@@ -591,18 +591,24 @@ body {
         width: calc(100% + 75px);
     }
 
+    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.tectro-unity {
+        top: 10px;
+    }
+
     .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.acina,
     .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.justin-prince {
         top: 15px;
     }
 
     .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.darley-jefferson,
-    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.die-genossen-fett {
+    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.die-genossen-fett,
+    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.handrix {
         top: 30px;
     }
 
     .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.oscar-house,
-    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.tommyrich {
+    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.tommyrich,
+    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.tart {
         top: 45px;
     }
 
