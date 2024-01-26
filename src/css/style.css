@@ -592,7 +592,7 @@ body {
     }
 
     .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.tectro-unity {
-        top: 10px;
+        top: 0px;
     }
 
     .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.acina,
@@ -614,6 +614,11 @@ body {
 
     .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.blvck-crowz {
         top: 50px;
+    }
+
+    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.tart p,
+    .lineup-artists .lineup-artists-wrap .lineup-artists-description-container.tectro-unity p {
+        white-space: pre-wrap;
     }
 
     .lineup-artists .lineup-artists-wrap .lineup-artists-description-container {
