@@ -1,6 +1,6 @@
 {
   "name": "erzbeats",
-  "version": "2.3.2",
+  "version": "2.4.1",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
