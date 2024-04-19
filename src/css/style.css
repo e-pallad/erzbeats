@@ -265,6 +265,15 @@ body {
     text-align: center;
 }
 
+.hero-content .sponsor-vitacola h2 {
+    padding: 50px;
+    margin: 0;
+    font-family: mountains;
+    font-size: 32px;
+    text-align: center;
+    color: hsl(0, 0%, 90%);
+}
+
 @media screen and (min-width: 992px) {
     .hero-content .entry-header h2 {
         font-size: 172px;

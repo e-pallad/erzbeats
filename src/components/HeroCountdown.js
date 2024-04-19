@@ -3,6 +3,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Countdown from 'react-countdown';
 
+import VitaCola from './../img/vitacola.png';
+
 // Timer done component
 const Completionist = () => (
     <div className='entry-header-subline'>
@@ -58,6 +60,29 @@ export default function HeroCountdown() {
                             daysInHours={false}
                             renderer={renderer}
                         />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col className="sponsor-vitacola flex flex-wrap justify-content-center">
+                        <h2>powered by</h2>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col className="sponsor-vitacola flex flex-wrap justify-content-center">
+                        <picture>
+                            <source 
+                                srcSet={VitaCola} 
+                                alt="Sponsorlogo: Vita Cola"
+                                width={300}
+                                height="auto"
+                            />
+                            <img 
+                                src={VitaCola} 
+                                alt="Sponsorlogo: Vita Cola" 
+                                width={300}
+                                height="auto"
+                            />
+                        </picture>
                     </Col>
                 </Row>
                 <Row>
