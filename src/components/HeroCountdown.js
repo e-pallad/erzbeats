@@ -30,12 +30,21 @@ const renderer = ({
                     <label>Tage</label>
                 </div>
                 <div className="countdown-holder">
+                    <div className="dlimiter">:</div>
+                </div>
+                <div className="countdown-holder">
                     <div className="dhour">{hours}</div>
                     <label>Stunden</label>
                 </div>
                 <div className="countdown-holder">
+                    <div className="dlimiter">:</div>
+                </div>
+                <div className="countdown-holder">
                     <div className="dmin">{minutes}</div>
                     <label>Minuten</label>
+                </div>
+                <div className="countdown-holder">
+                    <div className="dlimiter">:</div>
                 </div>
                 <div className="countdown-holder">
                     <div className="dsec">{seconds}</div>
