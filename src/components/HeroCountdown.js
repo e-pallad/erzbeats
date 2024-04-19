@@ -29,21 +29,21 @@ const renderer = ({
                     <div className="dday">{days}</div>
                     <label>Tage</label>
                 </div>
-                <div className="countdown-holder">
+                <div className="countdown-holder d-xl-block d-none">
                     <div className="dlimiter">:</div>
                 </div>
                 <div className="countdown-holder">
                     <div className="dhour">{hours}</div>
                     <label>Stunden</label>
                 </div>
-                <div className="countdown-holder">
+                <div className="countdown-holder d-xl-block d-none">
                     <div className="dlimiter">:</div>
                 </div>
                 <div className="countdown-holder">
                     <div className="dmin">{minutes}</div>
                     <label>Minuten</label>
                 </div>
-                <div className="countdown-holder">
+                <div className="countdown-holder d-xl-block d-none">
                     <div className="dlimiter">:</div>
                 </div>
                 <div className="countdown-holder">
@@ -82,13 +82,13 @@ export default function HeroCountdown() {
                             <source 
                                 srcSet={VitaCola} 
                                 alt="Sponsorlogo: Vita Cola"
-                                width={300}
+                                width={270}
                                 height="auto"
                             />
                             <img 
                                 src={VitaCola} 
                                 alt="Sponsorlogo: Vita Cola" 
-                                width={300}
+                                width={270}
                                 height="auto"
                             />
                         </picture>
