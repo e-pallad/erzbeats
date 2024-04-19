@@ -75,7 +75,7 @@ export default function Lineup() {
         } else {
             return (
                 <div className="lineup-artists-wrap flex flex-wrap">
-                    <div className="lineup-artists-description">
+                    <div className="lineup-artists-description order-sm-2 order-md-1">
                         <div className={"lineup-artists-description-container " + data.name.replace(/\s/g, "-").toLowerCase()}>
                             <div className="entry-title">{data.name}</div>
                             <div className="entry-content"><p>{data.beschreibung}</p></div>
@@ -101,7 +101,7 @@ export default function Lineup() {
                         )}
                         </div>
                     </div>
-                    <figure className="featured-image">
+                    <figure className="featured-image order-sm-1 order-md-2">
                         {( data.instagram ? (
                             <a href={data.instagram} target={"_blank"} rel={"noreferrer"} alt={"Instagram Link: " + data.name}>
                                 <picture>
